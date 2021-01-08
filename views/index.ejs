@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>CrShop</title>
+
+<link rel="icon" href="http://demo.magikthemes.com/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://demo.magikthemes.com/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/slider.css" type="text/css">
+<link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+<link rel="stylesheet" href="css/owl.theme.css" type="text/css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"><link rel="stylesheet" href="css/style.css" type="text/css">
+
+<link href='https://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="cms-index-index">
+<div class="page">
+  <%- include('partials/header'); %>
+  <!-- header -->
+
+  <section class="slider-intro">
+    <div class="container">
+      <div class="the-slideshow slideshow-wrapper">
+        <ul style="overflow: hidden;" class="slideshow">
+          <li class="slide" style="width: 100%">
+            <p><a href="#"><img src="images/banner-img.jpg" ></a></p>
+            <div class="caption light1 top-right">
+              <div class="caption-inner">
+                <p class="heading">Bracelet Pearl Libel </p>
+                <div class="badge"><em>up to</em> 70% <span>OFF</span></div>
+                <p class="intro-btn"><a  href="#" title="Click to see all features">Buy Now</a> </p>
+              </div>
+            </div>
+          </li>
+          <li class="slide">
+            <p><a href="#"> <img src="images/banner-img1.jpg" alt=""></a></p>
+            <div class="caption light top-right">
+              <div class="caption-inner">
+                <p class="normal-text">New Product</p>
+                <p class="intro-btn"><a  href="#" title="Click to see all features">Buy Now</a> </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <a href="#" id="home-slides-prev" class="backward browse-button">previous</a> <a href="#" id="home-slides-next" class="forward browse-button">next</a>
+        <div id="home-slides-pager" class="tab-pager tab-pager-img tab-pager-ring-lgray"></div>
+      </div>
+    </div>
+  </section>
+  <!-- end Slider -->
+  <!-- main container -->
+
+  <section class="main-container col1-layout home-content-container">
+    <div class="container">
+      <div class="row">
+        <div class="std">
+          <div class="best-pro col-lg-12">
+            <div class="slider-items-products">
+              <div class="new_title center">
+                <h2>Best sellers</h2>
+              </div>
+              <div id="best-seller-slider" class="product-flexslider hidden-buttons">
+                <div class="slider-items slider-width-col4">
+
+                  <!-- Item -->
+                  <div class="item">
+                    <div class="col-item">
+                      <div class="item-inner">
+                        <div class="item-img">
+                          <div class="new-label new-top-left">New</div>
+                          <div class="item-img-info"> <a href="product_detail.html"  title="Sample Product" class="product-image"> <img src="products-images/product1.jpg" alt="Sample Product"> </a>
+                            <div class="item-box-hover">
+                              <div class="box-inner">
+                                <div class="product-detail-bnt"><a href="quick_view.html" class="button detail-bnt"> <span> Quick View</span></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title"> <a href="product_detail.html" title="Sample Product"> Sample Product </a> </div>
+                            <div class="item-content">
+                              <div class="rating">
+                                <div class="ratings">
+                                  <div class="rating-box">
+                                    <div class="rating" style="width:80%"></div>
+                                  </div>
+                                  <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                </div>
+                              </div>
+                              <div class="item-price">
+                                <div class="price-box"> <span class="regular-price" id="product-price-1"> <span class="price">$125.00</span> </span> </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <div class="item">
+                    <div class="col-item">
+                      <div class="item-inner">
+                        <div class="item-img">
+                          <div class="item-img-info"> <a href="product_detail.html"  title="Sample Product" class="product-image"> <img src="products-images/product2.jpg" alt="Sample Product"></a>
+                            <div class="item-box-hover">
+                              <div class="box-inner">
+                                <div class="product-detail-bnt"><a href="quick_view.html" class="button detail-bnt"><span>Quick View</span></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title"> <a href="grid.html"  title="Sample Product"> Sample Product </a> </div>
+                            <div class="item-content">
+                              <div class="rating">
+                                <div class="ratings">
+                                  <div class="rating-box">
+                                    <div class="rating" style="width:0%"></div>
+                                  </div>
+                                  <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                </div>
+                              </div>
+                              <div class="item-price">
+                                <div class="price-box">
+                                  <p class="old-price"> <span class="price-label">Regular Price:</span> <span class="price" id="old-price-2"> $567.00 </span> </p>
+                                  <p class="special-price"> <span class="price-label">Special Price</span> <span class="price" id="product-price-2"> $456.00 </span> </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <div class="item">
+                    <div class="col-item">
+                      <div class="sale-label sale-top-right">Sale</div>
+                      <div class="item-inner">
+                        <div class="item-img">
+                          <div class="item-img-info"> <a href="product_detail.html"  title="Sample Product" class="product-image"> <img src="products-images/product3.jpg" alt="Sample Product"></a>
+                            <div class="item-box-hover">
+                              <div class="box-inner">
+                                <div class="product-detail-bnt"><a href="quick_view.html" class="button detail-bnt"><span>Quick View</span></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title"> <a href="grid.html"  title="Sample Product"> Sample Product </a> </div>
+                            <div class="item-content">
+                              <div class="rating">
+                                <div class="ratings">
+                                  <div class="rating-box">
+                                    <div class="rating" style="width:20%"></div>
+                                  </div>
+                                  <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                </div>
+                              </div>
+                              <div class="item-price">
+                                <div class="price-box">
+                                  <p class="old-price"> <span class="price-label">Regular Price:</span> <span class="price"> $167.00 </span> </p>
+                                  <p class="special-price"> <span class="price-label">Special Price</span> <span class="price"> $99.00 </span> </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="actions"><span class="add-to-links"> <a href="grid.html"  class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
+                        </div>
+                      </div>
+                      <strong></strong> </div>
+                  </div>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <div class="item">
+                    <div class="col-item">
+                      <div class="item-inner">
+                        <div class="item-img">
+                          <div class="item-img-info"> <a href="product_detail.html"  title="Sample Product" class="product-image"> <img src="products-images/product4.jpg" alt="Sample Product"></a>
+                            <div class="item-box-hover">
+                              <div class="box-inner">
+                                <div class="product-detail-bnt"><a href="quick_view.html" class="button detail-bnt"><span>Quick View</span></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title"> <a href="grid.html"  title="Sample Product"> Sample Product </a> </div>
+                            <div class="item-content">
+                              <div class="rating">
+                                <div class="ratings">
+                                  <div class="rating-box">
+                                    <div class="rating" style="width:0%"></div>
+                                  </div>
+                                  <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                </div>
+                              </div>
+                              <div class="item-price">
+                                <div class="price-box"> <span class="regular-price"> <span class="price">$225.00</span> </span> </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <div class="item">
+                    <div class="col-item">
+                      <div class="item-inner">
+                        <div class="item-img">
+                          <div class="new-label new-top-left">New</div>
+                          <div class="item-img-info"> <a href="product_detail.html"  title="Sample Product" class="product-image"> <img src="products-images/product4.jpg" alt="Sample Product"> </a>
+                            <div class="item-box-hover">
+                              <div class="box-inner">
+                                <div class="product-detail-bnt"><a href="quick_view.html" class="button detail-bnt"><span>Quick View</span></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title"> <a href="grid.html"  title="Sample Product"> Sample Product </a> </div>
+                            <div class="item-content">
+                              <div class="rating">
+                                <div class="ratings">
+                                  <div class="rating-box">
+                                    <div class="rating" style="width:80%"></div>
+                                  </div>
+                                  <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                </div>
+                              </div>
+                              <div class="item-price">
+                                <div class="price-box"> <span class="regular-price"> <span class="price">$125.00</span> </span> </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Item -->
+                  <!-- Item -->
+                  <div class="item">
+                    <div class="col-item">
+                      <div class="item-inner">
+                        <div class="item-img">
+                          <div class="new-label new-top-left">New</div>
+                          <div class="item-img-info"> <a href="product_detail.html"  title="Sample Product" class="product-image"> <img src="products-images/product6.jpg" alt="Sample Product"> </a>
+                            <div class="item-box-hover">
+                              <div class="box-inner">
+                                <div class="product-detail-bnt"><a href="quick_view.html" class="button detail-bnt"><span>Quick View</span></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title"> <a href="grid.html"  title="Sample Product"> Sample Product </a> </div>
+                            <div class="item-content">
+                              <div class="rating">
+                                <div class="ratings">
+                                  <div class="rating-box">
+                                    <div class="rating" style="width:80%"></div>
+                                  </div>
+                                  <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                </div>
+                              </div>
+                              <div class="item-price">
+                                <div class="price-box"> <span class="regular-price"> <span class="price">$125.00</span> </span> </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Item -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="featured-pro col-lg-12">
+            <div class="slider-items-products">
+              <div class="new_title center">
+                <h2>Featured Products</h2>
+              </div>
+              <div id="featured-slider" class="product-flexslider hidden-buttons">
+                <div class="slider-items slider-width-col4">
+
+                  <!-- Item -->
+                  <div class="item">
+                    <div class="col-item">
+                      <div class="item-inner">
+                        <div class="item-img">
+                          <div class="new-label new-top-left">New</div>
+                          <div class="item-img-info"> <a href="product_detail.html"  title="Sample Product" class="product-image"> <img src="products-images/product17.jpg" alt="Sample Product"> </a>
+                            <div class="item-box-hover">
+                              <div class="box-inner">
+                                <div class="product-detail-bnt"><a href="quick_view.html" class="button detail-bnt"><span>Quick View</span></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title"> <a href="grid.html"  title="Sample Product"> Sample Product </a> </div>
+                            <div class="item-content">
+                              <div class="rating">
+                                <div class="ratings">
+                                  <div class="rating-box">
+                                    <div class="rating" style="width:80%"></div>
+                                  </div>
+                                  <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                </div>
+                              </div>
+                              <div class="item-price">
+                                <div class="price-box"> <span class="regular-price"> <span class="price">$125.00</span> </span> </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <div class="item">
+                    <div class="col-item">
+                      <div class="item-inner">
+                        <div class="item-img">
+                          <div class="item-img-info"> <a href="product_detail.html"  title="Sample Product" class="product-image"> <img src="products-images/product2.jpg" alt="Sample Product"></a>
+                            <div class="item-box-hover">
+                              <div class="box-inner">
+                                <div class="product-detail-bnt"><a href="quick_view.html"  class="button detail-bnt"><span>Quick View</span></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title"> <a href="grid.html"  title="Sample Product"> Sample Product </a> </div>
+                            <div class="item-content">
+                              <div class="rating">
+                                <div class="ratings">
+                                  <div class="rating-box">
+                                    <div class="rating" style="width:0%"></div>
+                                  </div>
+                                  <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                </div>
+                              </div>
+                              <div class="item-price">
+                                <div class="price-box">
+                                  <p class="old-price"> <span class="price-label">Regular Price:</span> <span class="price"> $567.00 </span> </p>
+                                  <p class="special-price"> <span class="price-label">Special Price</span> <span class="price"> $456.00 </span> </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <div class="item">
+                    <div class="col-item">
+                      <div class="sale-label sale-top-right">Sale</div>
+                      <div class="item-inner">
+                        <div class="item-img">
+                          <div class="item-img-info"> <a href="product_detail.html"  title="Sample Product" class="product-image"> <img src="products-images/product13.jpg" alt="Sample Product"></a>
+                            <div class="item-box-hover">
+                              <div class="box-inner">
+                                <div class="product-detail-bnt"><a href="quick_view.html"  class="button detail-bnt"><span>Quick View</span></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title"> <a href="grid.html"  title="Sample Product"> Sample Product </a> </div>
+                            <div class="item-content">
+                              <div class="rating">
+                                <div class="ratings">
+                                  <div class="rating-box">
+                                    <div class="rating" style="width:20%"></div>
+                                  </div>
+                                  <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                </div>
+                              </div>
+                              <div class="item-price">
+                                <div class="price-box">
+                                  <p class="old-price"> <span class="price-label">Regular Price:</span> <span class="price"> $167.00 </span> </p>
+                                  <p class="special-price"> <span class="price-label">Special Price</span> <span class="price"> $99.00 </span> </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
+                        </div>
+                      </div>
+                      <strong></strong> </div>
+                  </div>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <div class="item">
+                    <div class="col-item">
+                      <div class="item-inner">
+                        <div class="item-img">
+                          <div class="item-img-info"> <a href="product_detail.html"  title="Sample Product" class="product-image"> <img src="products-images/product3.jpg" alt="Sample Product"></a>
+                            <div class="item-box-hover">
+                              <div class="box-inner">
+                                <div class="product-detail-bnt"><a href="quick_view.html"  class="button detail-bnt"><span>Quick View</span></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title"> <a href="grid.html"  title="Sample Product"> Sample Product </a> </div>
+                            <div class="item-content">
+                              <div class="rating">
+                                <div class="ratings">
+                                  <div class="rating-box">
+                                    <div class="rating" style="width:0%"></div>
+                                  </div>
+                                  <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                </div>
+                              </div>
+                              <div class="item-price">
+                                <div class="price-box"> <span class="regular-price"> <span class="price">$225.00</span> </span> </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Item -->
+
+                  <!-- Item -->
+                  <div class="item">
+                    <div class="col-item">
+                      <div class="item-inner">
+                        <div class="item-img">
+                          <div class="new-label new-top-left">New</div>
+                          <div class="item-img-info"> <a href="product_detail.html"  title="Sample Product" class="product-image"> <img src="products-images/product9.jpg" alt="Sample Product"> </a>
+                            <div class="item-box-hover">
+                              <div class="box-inner">
+                                <div class="product-detail-bnt"><a href="quick_view.html"  class="button detail-bnt"><span>Quick View</span></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title"> <a href="grid.html"  title="Sample Product"> Sample Product </a> </div>
+                            <div class="item-content">
+                              <div class="rating">
+                                <div class="ratings">
+                                  <div class="rating-box">
+                                    <div class="rating" style="width:80%"></div>
+                                  </div>
+                                  <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                </div>
+                              </div>
+                              <div class="item-price">
+                                <div class="price-box"> <span class="regular-price"> <span class="price">$125.00</span> </span> </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Item -->
+                  <!-- Item -->
+                  <div class="item">
+                    <div class="col-item">
+                      <div class="item-inner">
+                        <div class="item-img">
+                          <div class="new-label new-top-left">New</div>
+                          <div class="item-img-info"> <a href="product_detail.html"  title="Sample Product" class="product-image"> <img src="products-images/product19.jpg" alt="Sample Product"> </a>
+                            <div class="item-box-hover">
+                              <div class="box-inner">
+                                <div class="product-detail-bnt"><a href="quick_view.html"  class="button detail-bnt"><span>Quick View</span></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title"> <a href="grid.html"  title="Sample Product"> Sample Product </a> </div>
+                            <div class="item-content">
+                              <div class="rating">
+                                <div class="ratings">
+                                  <div class="rating-box">
+                                    <div class="rating" style="width:80%"></div>
+                                  </div>
+                                  <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                </div>
+                              </div>
+                              <div class="item-price">
+                                <div class="price-box"> <span class="regular-price"> <span class="price">$125.00</span> </span> </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Item -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End main container -->
+
+</div>
+  <!-- Footer -->
+  <%- include('partials/footer'); %>
+  <!-- End Footer --> 
+
+<!-- JavaScript --> 
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/parallax.js"></script> 
+<script type="text/javascript" src="js/common.js"></script> 
+<script type="text/javascript" src="js/slider.js"></script> 
+<script type="text/javascript" src="js/owl.carousel.min.js"></script> 
+<script type="text/javascript">
+    //<![CDATA[
+	jQuery(function() {
+		jQuery(".slideshow").cycle({
+			fx: 'scrollHorz', easing: 'easeInOutCubic', timeout: 10000, speedOut: 800, speedIn: 800, sync: 1, pause: 1, fit: 0, 			pager: '#home-slides-pager',
+			prev: '#home-slides-prev',
+			next: '#home-slides-next'
+		});
+	});
+    //]]>
+    </script>
+</body>
+
+</html>
