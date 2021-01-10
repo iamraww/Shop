@@ -103,8 +103,8 @@ jQuery(document).ready(function() {
       , navigationText: ['<a class="flex-prev"></a>', '<a class="flex-next"></a>']
       , slideSpeed: 500
       , pagination: !1
-    }), /* related-products-slider */
-    jQuery("#related-products-slider .slider-items").owlCarousel({
+    }), /* related-quick-view-slider */
+    jQuery("#related-quick-view-slider .slider-items").owlCarousel({
       items: 4
       , itemsDesktop: [1024, 4]
       , itemsDesktopSmall: [900, 3]
@@ -114,8 +114,8 @@ jQuery(document).ready(function() {
       , navigationText: ['<a class="flex-prev"></a>', '<a class="flex-next"></a>']
       , slideSpeed: 500
       , pagination: !1
-    }), /* upsell-products-slider */
-    jQuery("#upsell-products-slider .slider-items").owlCarousel({
+    }), /* upsell-quick-view-slider */
+    jQuery("#upsell-quick-view-slider .slider-items").owlCarousel({
       items: 4
       , itemsDesktop: [1024, 4]
       , itemsDesktopSmall: [900, 3]

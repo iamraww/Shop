@@ -19,7 +19,32 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="172b61e9-1e83-494b-85f1-0a5ea327bc73" name="Default Changelist" comment="" />
+    <list default="true" id="172b61e9-1e83-494b-85f1-0a5ea327bc73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/views/new-arrival.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/products/ruby.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/quick-view/flower-sliver.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/quick-view/lotus-ruby-bracelet.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/quick-view/lotus-ruby-ring.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/quick-view/quick-view.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/quick-view/sun-eyes.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/quick-view/turtle-ruby.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/sale-products.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/js/cloud-zoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/js/cloud-zoom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/cloud-zoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/cloud-zoom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/about-us.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/about-us.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/list-product.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/list-product.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/quick-view.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/quick-view/love-fox.ejs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +83,8 @@
       <recent name="C:\Users\admin\Desktop\CristalShop\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\Shop\views\quick-view" />
+      <recent name="C:\Users\admin\Desktop\Shop\views\products" />
       <recent name="C:\Users\admin\Desktop\magik_accord\public" />
     </key>
   </component>
@@ -77,7 +104,9 @@
       <workItem from="1610111526105" duration="6793000" />
       <workItem from="1610135176726" duration="43000" />
       <workItem from="1610135761176" duration="132000" />
-      <workItem from="1610135948120" duration="10661000" />
+      <workItem from="1610135948120" duration="13542000" />
+      <workItem from="1610197021204" duration="7679000" />
+      <workItem from="1610283462694" duration="4050000" />
     </task>
     <servers />
   </component>
@@ -97,10 +126,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="468" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610134935993">
+    <state x="468" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610286384573">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="468" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1610134935993" />
+    <state x="468" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1610286384573" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610091481466">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -113,6 +142,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610111775605" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1610147973134">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1610147973134" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610111769506">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

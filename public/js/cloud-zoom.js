@@ -402,7 +402,7 @@
 jQuery(function ($) {
     "use strict";
     var $mainContainer = $(".container"),
-        $section = $(".products-list"),
+        $section = $(".quick-view-list"),
         $links = $(".quick-view:not(.fancybox)"),
         $view = $(".product-view-ajax"),
         $container = $(".product-view-container", $view),
@@ -613,7 +613,7 @@ jQuery(function ($) {
             }
         })
     });
-    var productsListSmall = $(".products-list-small .slides");
+    var productsListSmall = $(".quick-view-list-small .slides");
     if (productsListSmall.length > 0) {
         var items = 12,
             itemsDesktop = 12,

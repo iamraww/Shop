@@ -978,7 +978,7 @@ nav {
 	border-width: 4px 4px 0;
 	border-color: #333 transparent transparent;
 }
-	/* Number of products in category */ 
+	/* Number of quick-view in category */
 	/* Sidebar menu */
 .vertnav .number {
 	margin-left: 3px;
@@ -1908,7 +1908,7 @@ ul#magicat li .open-close, .block-layered-nav dt .toggleBtn {
 	display: inline-block;
 }
 
-/* 7. recommend products page */
+/* 7. recommend quick-view page */
 
 .new_title.center {
 	padding: 0 0 10px 0;
@@ -2913,7 +2913,7 @@ small {
 .product-additional {
   margin-left: 15px;
 }
-	/* products slider */
+	/* quick-view slider */
 .col-item {
 	text-align: center;
 	margin-bottom: 10px;
@@ -3369,10 +3369,10 @@ color: #000;
 	opacity: 0.9;
 }
 .box-category .subDropdown.plus {
-	background-image: url("../images/plus.png");
+	background-image: url("/images/plus.png");
 }
 .box-category .subDropdown.minus {
-	background-image: url("../images/minus.png");
+	background-image: url(" /images/minus.png");
 }
 .box-category ul li a {
 	display: block;
@@ -3750,7 +3750,7 @@ color: #000;
 	color: #333;
 }
 .btn-remove1 {
-	background-image: url(../images/btn_remove.png);
+	background-image: url("/images/btn_remove.png");
 	margin: 0px 0 0 18px;
 }
 .btn-remove1:hover, .btn-remove1:focus {
@@ -4923,7 +4923,7 @@ input.radio {
 }
 .toolbar a.button-grid:hover {
 	border: 1px #f3f3f3 solid;
-	background: url(/images/icon_grid_act11.png) no-repeat 10px 7px;
+	background: url(../images/icon_grid_act11.png) no-repeat 10px 7px;
 	background-color:#ff1341;
 	color: #fff;
 	text-decoration:none;
@@ -6569,7 +6569,7 @@ fieldset {
 	margin-left: 5px;
 	text-transform: uppercase;
 }
-	/*  prev-next-products */
+	/*  prev-next-quick-view */
 .product-next-prev {
 	overflow: hidden;
 	margin: 0px 0 0 0;
