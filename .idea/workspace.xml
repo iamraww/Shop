@@ -31,10 +31,6 @@
       <change afterPath="$PROJECT_DIR$/views/sale-products.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/public/js/cloud-zoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/js/cloud-zoom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/public/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/js/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/cloud-zoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/cloud-zoom.js" afterDir="false" />
@@ -106,7 +102,8 @@
       <workItem from="1610135761176" duration="132000" />
       <workItem from="1610135948120" duration="13542000" />
       <workItem from="1610197021204" duration="7679000" />
-      <workItem from="1610283462694" duration="4050000" />
+      <workItem from="1610283462694" duration="4836000" />
+      <workItem from="1610344812992" duration="1011000" />
     </task>
     <servers />
   </component>

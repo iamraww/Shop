@@ -66,8 +66,8 @@ app.get('/new-arrival', function (request, response) {
 })
 
 
-app.get('/sale-quick-view', function (request, response) {
-    response.render('sale-quick-view.ejs', { title: 'New Sale'});
+app.get('/sale-products', function (request, response) {
+    response.render('sale-products.ejs', { title: 'New Sale'});
 })
 
 app.listen(port, () => {
