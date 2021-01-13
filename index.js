@@ -83,9 +83,10 @@ app.use(Products);
 app.use(adminIndex);
 
 
-
-app.get('/create-product', function (req, res) {
-    res.render('create-product.ejs');
+app.get('/', function (request, response) {
+    Product.find(function (err, data) {
+        response.render('index.ejs', { data: data});
+    });
 })
 
 app.post('/save-product', function (req, res) {

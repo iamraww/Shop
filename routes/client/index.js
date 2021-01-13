@@ -11,7 +11,6 @@ route.get('/about-us', function (request, response) {
     response.render('about-us.ejs', { title: 'About Us'});
 })
 
-
 route.get('/quick-view', function (request, response) {
     response.render('quick-view/quick-view.ejs', { title: 'Quick View'});
 })

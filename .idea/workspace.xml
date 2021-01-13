@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="172b61e9-1e83-494b-85f1-0a5ea327bc73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/admin/adminControllers.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/models/product.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/css/sb-admin-2.min.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/css/vendor/all.min.ts" afterDir="false" />
@@ -29,9 +30,11 @@
       <change afterPath="$PROJECT_DIR$/routes/client/products.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/admin/add-product.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/admin/dashboard.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/index.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/detail.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/edit.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/admin/partials/footer.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/admin/partials/header.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/products.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/create-product.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/products/list-product.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/products/new-arrival.ejs" afterDir="false" />
@@ -107,7 +110,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Asp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/products/partials" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../codeRAR/node-modules-demo/controllers/admin/product-controller.js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -148,7 +151,8 @@
       <workItem from="1610344812992" duration="14689000" />
       <workItem from="1610374395895" duration="601000" />
       <workItem from="1610436137696" duration="5705000" />
-      <workItem from="1610520797759" duration="10262000" />
+      <workItem from="1610520797759" duration="13505000" />
+      <workItem from="1610543858282" duration="927000" />
     </task>
     <servers />
   </component>
@@ -176,10 +180,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610091481466" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610535722467">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610543538545">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610535722467" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610543538545" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1610111775605">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
