@@ -1,13 +1,18 @@
 const express = require('express');
-const bodyParse = require('body-parser');
+const bodyParser = require('body-parser');
 const app = express();
+const Product = require('./models/product');
 const port = 8888;
 
 app.use(express.static('public'))
 app.set('views', 'views');
 app.set('view engine', 'ejs');
 
+app.use(bodyParser.json({ type: 'application/*+json' }));
+app.use(bodyParser.urlencoded({ extended: false }));
 
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://admin:abcd1234@cluster0.5saaw.mongodb.net/CrShop?retryWrites=true&w=majority', { useNewUrlParser: true });
 
 app.get('/', function (request, response) {
     response.render('index.ejs', { title: 'Home page'});
@@ -69,6 +74,31 @@ app.get('/new-arrival', function (request, response) {
 app.get('/sale-products', function (request, response) {
     response.render('sale-products.ejs', { title: 'New Sale'});
 })
+
+app.get('/wp-admin', function (request, response) {
+    response.render('dashboard.ejs', { title: 'New Sale'});
+})
+
+
+
+
+app.get('/create-product', function (req, res) {
+    res.render('create-product.ejs');
+})
+
+app.post('/save-product', function (req, res) {
+    const name = req.body.name;
+    const price = req.body.price;
+    const thumbnail = req.body.thumbnail;
+    const product = new Product({
+        name: name,
+        price: price,
+        thumbnail: thumbnail
+    });
+    product.save();
+    res.send('Save success!');
+})
+
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
