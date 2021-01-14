@@ -39,7 +39,7 @@
             <div class="row">
                 <ul>
                     <li class="home"><a href="/" title="Go to Home Page">Home</a><span>&raquo; </span></li>
-                    <li class=""><a href="/list-product" >Products</a><span>&raquo; </span></li>
+                    <li class=""><a href="/list-product">Products</a><span>&raquo; </span></li>
                     <li class="category13"><strong>Ruby</strong></li>
                 </ul>
             </div>
@@ -57,8 +57,9 @@
                     <div class="category-products">
                         <div class="toolbar">
                             <div class="sorter">
-                                <div class="view-mode"> <span class="button button-active button-grid" title="Grid">Grid</span>
-                                    <a class="button button-list" title="List" href="list.ejs">List</a> </div>
+                                <div class="view-mode"><span class="button button-active button-grid"
+                                                             title="Grid">Grid</span>
+                                    <a class="button button-list" title="List" href="list.ejs">List</a></div>
                             </div>
                             <div id="sort-by">
                                 <label class="left">Sort By: </label>
@@ -71,7 +72,9 @@
                                         </ul>
                                     </li>
                                 </ul>
-                                <a title="Set Descending Direction" href="#" class="button-asc left"><span class="glyphicon glyphicon-arrow-up" style="color:#999;font-size:11px;"></span></a> </div>
+                                <a title="Set Descending Direction" href="#" class="button-asc left"><span
+                                            class="glyphicon glyphicon-arrow-up"
+                                            style="color:#999;font-size:11px;"></span></a></div>
                             <div class="pager">
                                 <div class="pages">
                                     <label>Page:</label>
@@ -101,434 +104,559 @@
                         </div>
                         <ul class="products-grid">
                             <div class="col-lg-3">
-                            <div style="float: left" class="block block-layered-nav ">
-                                <div class="block-content">
-                                    <dl id="narrow-by-list">
-                                        <dt class="odd">Price</dt>
-                                        <dd class="odd">
-                                            <ol>
-                                                <li> <a href="#"><span class="price">$0.00</span> - <span class="price">$99.99</span></a> (6) </li>
-                                                <li> <a href="#"><span class="price">$100.00</span> and above</a> (6) </li>
-                                            </ol>
-                                        </dd>
-                                        <dt class="even">Manufacturer</dt>
-                                        <dd class="even">
-                                            <ol>
-                                                <li> <a href="#">TheBrand</a> (9) </li>
-                                                <li> <a href="#">Company</a> (4) </li>
-                                                <li> <a href="#">LogoFashion</a> (1) </li>
-                                            </ol>
-                                        </dd>
-                                        <dt class="odd">Color</dt>
-                                        <dd class="odd">
-                                            <ol>
-                                                <li> <a href="#">Green</a> (1) </li>
-                                                <li> <a href="#">White</a> (5) </li>
-                                                <li> <a href="#">Black</a> (5) </li>
-                                                <li> <a href="#">Gray</a> (4) </li>
-                                                <li> <a href="#">Dark Gray</a> (3) </li>
-                                                <li> <a href="#">Blue</a> (1) </li>
-                                            </ol>
-                                        </dd>
-                                        <dt class="last even">Size</dt>
-                                        <dd class="last even">
-                                            <ol>
-                                                <li> <a href="#">S</a> (6) </li>
-                                                <li> <a href="#">M</a> (6) </li>
-                                                <li> <a href="#">L</a> (4) </li>
-                                                <li> <a href="#">XL</a> (4) </li>
-                                            </ol>
-                                        </dd>
-                                    </dl>
+                                <div style="float: left" class="block block-layered-nav ">
+                                    <div class="block-content">
+                                        <dl id="narrow-by-list">
+                                            <dt class="odd">Price</dt>
+                                            <dd class="odd">
+                                                <ol>
+                                                    <li><a href="#"><span class="price">$0.00</span> - <span
+                                                                    class="price">$99.99</span></a> (6)
+                                                    </li>
+                                                    <li><a href="#"><span class="price">$100.00</span> and above</a> (6)
+                                                    </li>
+                                                </ol>
+                                            </dd>
+                                            <dt class="even">Manufacturer</dt>
+                                            <dd class="even">
+                                                <ol>
+                                                    <li><a href="#">TheBrand</a> (9)</li>
+                                                    <li><a href="#">Company</a> (4)</li>
+                                                    <li><a href="#">LogoFashion</a> (1)</li>
+                                                </ol>
+                                            </dd>
+                                            <dt class="odd">Color</dt>
+                                            <dd class="odd">
+                                                <ol>
+                                                    <li><a href="#">Green</a> (1)</li>
+                                                    <li><a href="#">White</a> (5)</li>
+                                                    <li><a href="#">Black</a> (5)</li>
+                                                    <li><a href="#">Gray</a> (4)</li>
+                                                    <li><a href="#">Dark Gray</a> (3)</li>
+                                                    <li><a href="#">Blue</a> (1)</li>
+                                                </ol>
+                                            </dd>
+                                            <dt class="last even">Size</dt>
+                                            <dd class="last even">
+                                                <ol>
+                                                    <li><a href="#">S</a> (6)</li>
+                                                    <li><a href="#">M</a> (6)</li>
+                                                    <li><a href="#">L</a> (4)</li>
+                                                    <li><a href="#">XL</a> (4)</li>
+                                                </ol>
+                                            </dd>
+                                        </dl>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-<!--                            item-->
-                            <div class="col-lg-9">
-                            <li style="float: left;" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                <div class="item">
-                                    <div class="col-item">
-                                        <div class="item-inner">
-                                            <div class="item-img">
-                                                <div class="new-label new-top-left">New</div>
-                                                <div class="item-img-info">
-                                                    <a href="/list-product"  title="Sample Product" class="product-image">
-                                                        <img src="../../products-images/ruby/ring/lotus-ruby-ring-9823/lotus-ruby-thumbnail.jpg" alt="Sample Product"> </a>
-                                                    <div class="item-box-hover">
-                                                        <div class="box-inner">
-                                                            <div class="product-detail-bnt"><a href="/lotus-ruby-ring" class="button detail-bnt"> <span> Quick View</span></a></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-info">
-                                                <div class="info-inner">
-                                                    <div class="item-title"> <a href="/list-product" title="Lotus Ruby Ring"> Lotus Ruby Ring </a> </div>
-                                                    <div class="item-content">
-                                                        <div class="rating">
-                                                            <div class="ratings">
-                                                                <div class="rating-box">
-                                                                    <div class="rating" style="width:80%"></div>
-                                                                </div>
-                                                                <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item-price">
-                                                            <div class="price-box"> <span class="regular-price" id="product-price-1"> <span class="price">$125.00</span> </span> </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
-                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
-                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-<!--                            item-->
-                            <li style="float: left;" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                <div class="item">
-                                    <div class="col-item">
-                                        <div class="item-inner">
-                                            <div class="item-img">
-                                                <div class="item-img-info">
-                                                    <a href="/list-product"  title="Sample Product" class="product-image">
-                                                        <img src="../../products-images/ruby/ring/Suns-Eyes-4174/sun's-eyes-0thumbnail-01.jpg" alt="Sun's Eyes">
-                                                    </a>
-                                                    <div class="item-box-hover">
-                                                        <div class="box-inner">
-                                                            <div class="product-detail-bnt"><a href="/sun-eyes" class="button detail-bnt"><span>Quick View</span></a></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-info">
-                                                <div class="info-inner">
-                                                    <div class="item-title"> <a href="/list-product" title="Sun's Eyes"> Sun's Eyes </a> </div>
-                                                    <div class="item-content">
-                                                        <div class="rating">
-                                                            <div class="ratings">
-                                                                <div class="rating-box">
-                                                                    <div class="rating" style="width:0%"></div>
-                                                                </div>
-                                                                <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item-price">
-                                                            <div class="price-box">
-                                                                <p class="old-price"> <span class="price-label">Regular Price:</span> <span class="price" id="old-price-2"> $567.00 </span> </p>
-                                                                <p class="special-price"> <span class="price-label">Special Price</span> <span class="price" id="product-price-2"> $456.00 </span> </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
-                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
-                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-<!--                            item-->
-                            <li style="float: left;" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                <div class="item">
-                                    <div class="col-item">
-                                        <div class="sale-label sale-top-right">Sale</div>
-                                        <div class="item-inner">
-                                            <div class="item-img">
-                                                <div class="item-img-info">
-                                                    <a href="/list-product"  title="Sample Product" class="product-image">
-                                                        <img src="../../products-images/ruby/neck/fox-love/fox-love-thumbnail.jpg" alt="Fox Love">
-                                                    </a>
-                                                    <div class="item-box-hover">
-                                                        <div class="box-inner">
-                                                            <div class="product-detail-bnt"><a href="/love-fox" class="button detail-bnt"><span>Quick View</span></a></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-info">
-                                                <div class="info-inner">
-                                                    <div class="item-title"> <a href="/list-product" title="Fox Love"> Fox Love </a> </div>
-                                                    <div class="item-content">
-                                                        <div class="rating">
-                                                            <div class="ratings">
-                                                                <div class="rating-box">
-                                                                    <div class="rating" style="width:20%"></div>
-                                                                </div>
-                                                                <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item-price">
-                                                            <div class="price-box">
-                                                                <p class="old-price"> <span class="price-label">Regular Price:</span> <span class="price"> $167.00 </span> </p>
-                                                                <p class="special-price"> <span class="price-label">Special Price</span> <span class="price"> $99.00 </span> </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="actions"><span class="add-to-links"> <a href="/list-product"  class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
-                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
-                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
-                                            </div>
-                                        </div>
-                                        <strong></strong> </div>
-                                </div>
-                            </li>
-                            <li style="float: left" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                <div class="item">
-                                    <div class="col-item">
-                                        <div class="item-inner">
-                                            <div class="item-img">
-                                                <div class="item-img-info">
-                                                    <a href="/list-product"  title="Sample Product" class="product-image">
-                                                        <img src="../../products-images\ruby\neck\turtle\linh-quy-ruby-thumbnail.jpg" alt="Turtle Ruby">
-                                                    </a>
-                                                    <div class="item-box-hover">
-                                                        <div class="box-inner">
-                                                            <div class="product-detail-bnt"><a href="/turtle-ruby" class="button detail-bnt"><span>Quick View</span></a></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-info">
-                                                <div class="info-inner">
-                                                    <div class="item-title"> <a href="/list-product"  title="Turtle Ruby"> Turtle Ruby </a> </div>
-                                                    <div class="item-content">
-                                                        <div class="rating">
-                                                            <div class="ratings">
-                                                                <div class="rating-box">
-                                                                    <div class="rating" style="width:0%"></div>
-                                                                </div>
-                                                                <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item-price">
-                                                            <div class="price-box"> <span class="regular-price"> <span class="price">$225.00</span> </span> </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
-                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
-                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-<!--                            item-->
-                            <li style="float: left" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                <div class="item">
-                                    <div class="col-item">
-                                        <div class="item-inner">
-                                            <div class="item-img">
-                                                <div class="new-label new-top-left">New</div>
-                                                <div class="item-img-info">
-                                                    <a href="/list-product"  title="Sample Product" class="product-image">
-                                                        <img src="../../products-images\ruby\neck\flower-silver-ruby-star\slide-flower-silver-ruby-star-thumbnail.jpg" alt="Flower Silver">
-                                                    </a>
-                                                    <div class="item-box-hover">
-                                                        <div class="box-inner">
-                                                            <div class="product-detail-bnt"><a href="/flower-sliver" class="button detail-bnt"><span>Quick View</span></a></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-info">
-                                                <div class="info-inner">
-                                                    <div class="item-title"> <a href="/list-product" title="Flower Silver"> Flower Silver </a> </div>
-                                                    <div class="item-content">
-                                                        <div class="rating">
-                                                            <div class="ratings">
-                                                                <div class="rating-box">
-                                                                    <div class="rating" style="width:80%"></div>
-                                                                </div>
-                                                                <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item-price">
-                                                            <div class="price-box"> <span class="regular-price"> <span class="price">$125.00</span> </span> </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
-                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
-                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li style="float: left" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                <div class="item">
-                                    <div class="col-item">
-                                        <div class="item-inner">
-                                            <div class="item-img">
-                                                <div class="new-label new-top-left">New</div>
-                                                <div class="item-img-info">
-                                                    <a href="/list-product"  title="Sample Product" class="product-image">
-                                                        <img src="../../products-images\ruby\bracelet\lotus-ruby-bracelet\lotus-ruby-bracelet-thumbnail.jpg" alt="Lotus Ruby">
-                                                    </a>
-                                                    <div class="item-box-hover">
-                                                        <div class="box-inner">
-                                                            <div class="product-detail-bnt"><a href="/lotus-ruby-bracelet" class="button detail-bnt"><span>Quick View</span></a></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-info">
-                                                <div class="info-inner">
-                                                    <div class="item-title"> <a href="/list-product" title="Lotus Ruby"> Lotus Ruby Bracelet</a> </div>
-                                                    <div class="item-content">
-                                                        <div class="rating">
-                                                            <div class="ratings">
-                                                                <div class="rating-box">
-                                                                    <div class="rating" style="width:80%"></div>
-                                                                </div>
-                                                                <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item-price">
-                                                            <div class="price-box"> <span class="regular-price"> <span class="price">$125.00</span> </span> </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
-                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
-                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li style="float: left" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                <div class="item">
-                                    <div class="col-item">
-                                        <div class="item-inner">
-                                            <div class="item-img">
-                                                <div class="item-img-info">
-                                                    <a href="/list-product"  title="Sample Product" class="product-image">
-                                                        <img src="../../products-images\ruby\neck\turtle\linh-quy-ruby-thumbnail.jpg" alt="Turtle Ruby">
-                                                    </a>
-                                                    <div class="item-box-hover">
-                                                        <div class="box-inner">
-                                                            <div class="product-detail-bnt"><a href="/turtle-ruby" class="button detail-bnt"><span>Quick View</span></a></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-info">
-                                                <div class="info-inner">
-                                                    <div class="item-title"> <a href="/list-product"  title="Turtle Ruby"> Turtle Ruby </a> </div>
-                                                    <div class="item-content">
-                                                        <div class="rating">
-                                                            <div class="ratings">
-                                                                <div class="rating-box">
-                                                                    <div class="rating" style="width:0%"></div>
-                                                                </div>
-                                                                <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item-price">
-                                                            <div class="price-box"> <span class="regular-price"> <span class="price">$225.00</span> </span> </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
-                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
-                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
                             <!--                            item-->
-                            <li style="float: left" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                <div class="item">
-                                    <div class="col-item">
-                                        <div class="item-inner">
-                                            <div class="item-img">
-                                                <div class="new-label new-top-left">New</div>
-                                                <div class="item-img-info">
-                                                    <a href="/list-product"  title="Sample Product" class="product-image">
-                                                        <img src="../../products-images\ruby\neck\flower-silver-ruby-star\slide-flower-silver-ruby-star-thumbnail.jpg" alt="Flower Silver">
-                                                    </a>
-                                                    <div class="item-box-hover">
-                                                        <div class="box-inner">
-                                                            <div class="product-detail-bnt"><a href="/flower-sliver" class="button detail-bnt"><span>Quick View</span></a></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-info">
-                                                <div class="info-inner">
-                                                    <div class="item-title"> <a href="/list-product" title="Flower Silver"> Flower Silver </a> </div>
-                                                    <div class="item-content">
-                                                        <div class="rating">
-                                                            <div class="ratings">
-                                                                <div class="rating-box">
-                                                                    <div class="rating" style="width:80%"></div>
-                                                                </div>
-                                                                <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                            <div class="col-lg-9">
+                                <li style="float: left;" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="col-item">
+                                            <div class="item-inner">
+                                                <div class="item-img">
+                                                    <div class="new-label new-top-left">New</div>
+                                                    <div class="item-img-info">
+                                                        <a href="/list-product" title="Sample Product"
+                                                           class="product-image">
+                                                            <img src="../../products-images/ruby/ring/lotus-ruby-ring-9823/lotus-ruby-thumbnail.jpg"
+                                                                 alt="Sample Product"> </a>
+                                                        <div class="item-box-hover">
+                                                            <div class="box-inner">
+                                                                <div class="product-detail-bnt"><a
+                                                                            href="/lotus-ruby-ring"
+                                                                            class="button detail-bnt">
+                                                                        <span> Quick View</span></a></div>
                                                             </div>
                                                         </div>
-                                                        <div class="item-price">
-                                                            <div class="price-box"> <span class="regular-price"> <span class="price">$125.00</span> </span> </div>
-                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
-                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
-                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
+                                                <div class="item-info">
+                                                    <div class="info-inner">
+                                                        <div class="item-title"><a href="/list-product"
+                                                                                   title="Lotus Ruby Ring"> Lotus Ruby
+                                                                Ring </a></div>
+                                                        <div class="item-content">
+                                                            <div class="rating">
+                                                                <div class="ratings">
+                                                                    <div class="rating-box">
+                                                                        <div class="rating" style="width:80%"></div>
+                                                                    </div>
+                                                                    <p class="rating-links"><a href="#">1 Review(s)</a>
+                                                                        <span class="separator">|</span> <a href="#">Add
+                                                                            Review</a></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-price">
+                                                                <div class="price-box"><span class="regular-price"
+                                                                                             id="product-price-1"> <span
+                                                                                class="price">$125.00</span> </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions"><span class="add-to-links"> <a
+                                                                    href="wishlist.ejs" class="link-wishlist"
+                                                                    title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare"
+                               title="Add to Compare"><span>Add to Compare</span></a></span></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li style="float: left" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                <div class="item">
-                                    <div class="col-item">
-                                        <div class="item-inner">
-                                            <div class="item-img">
-                                                <div class="new-label new-top-left">New</div>
-                                                <div class="item-img-info">
-                                                    <a href="/list-product"  title="Sample Product" class="product-image">
-                                                        <img src="../../products-images\ruby\bracelet\lotus-ruby-bracelet\lotus-ruby-bracelet-thumbnail.jpg" alt="Lotus Ruby">
-                                                    </a>
-                                                    <div class="item-box-hover">
-                                                        <div class="box-inner">
-                                                            <div class="product-detail-bnt"><a href="/lotus-ruby-bracelet" class="button detail-bnt"><span>Quick View</span></a></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-info">
-                                                <div class="info-inner">
-                                                    <div class="item-title"> <a href="/list-product" title="Lotus Ruby"> Lotus Ruby Bracelet</a> </div>
-                                                    <div class="item-content">
-                                                        <div class="rating">
-                                                            <div class="ratings">
-                                                                <div class="rating-box">
-                                                                    <div class="rating" style="width:80%"></div>
+                                </li>
+                                <!--                            item-->
+                                <li style="float: left;" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="col-item">
+                                            <div class="item-inner">
+                                                <div class="item-img">
+                                                    <div class="item-img-info">
+                                                        <a href="/list-product" title="Sample Product"
+                                                           class="product-image">
+                                                            <img src="../../products-images/ruby/ring/Suns-Eyes-4174/sun's-eyes-0thumbnail-01.jpg"
+                                                                 alt="Sun's Eyes">
+                                                        </a>
+                                                        <div class="item-box-hover">
+                                                            <div class="box-inner">
+                                                                <div class="product-detail-bnt"><a href="/sun-eyes"
+                                                                                                   class="button detail-bnt"><span>Quick View</span></a>
                                                                 </div>
-                                                                <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
                                                             </div>
                                                         </div>
-                                                        <div class="item-price">
-                                                            <div class="price-box"> <span class="regular-price"> <span class="price">$125.00</span> </span> </div>
-                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="actions"><span class="add-to-links"> <a href="wishlist.ejs" class="link-wishlist" title="Add to Wishlist"><span>Add to Wishlist</span></a>
-                            <button  title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
-                            <a href="compare.html" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span> </div>
+                                                <div class="item-info">
+                                                    <div class="info-inner">
+                                                        <div class="item-title"><a href="/list-product"
+                                                                                   title="Sun's Eyes"> Sun's Eyes </a>
+                                                        </div>
+                                                        <div class="item-content">
+                                                            <div class="rating">
+                                                                <div class="ratings">
+                                                                    <div class="rating-box">
+                                                                        <div class="rating" style="width:0%"></div>
+                                                                    </div>
+                                                                    <p class="rating-links"><a href="#">1 Review(s)</a>
+                                                                        <span class="separator">|</span> <a href="#">Add
+                                                                            Review</a></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-price">
+                                                                <div class="price-box">
+                                                                    <p class="old-price"><span class="price-label">Regular Price:</span>
+                                                                        <span class="price"
+                                                                              id="old-price-2"> $567.00 </span></p>
+                                                                    <p class="special-price"><span class="price-label">Special Price</span>
+                                                                        <span class="price" id="product-price-2"> $456.00 </span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions"><span class="add-to-links"> <a
+                                                                    href="wishlist.ejs" class="link-wishlist"
+                                                                    title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare"
+                               title="Add to Compare"><span>Add to Compare</span></a></span></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
+                                </li>
+                                <!--                            item-->
+                                <li style="float: left;" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="col-item">
+                                            <div class="sale-label sale-top-right">Sale</div>
+                                            <div class="item-inner">
+                                                <div class="item-img">
+                                                    <div class="item-img-info">
+                                                        <a href="/list-product" title="Sample Product"
+                                                           class="product-image">
+                                                            <img src="../../products-images/ruby/neck/fox-love/fox-love-thumbnail.jpg"
+                                                                 alt="Fox Love">
+                                                        </a>
+                                                        <div class="item-box-hover">
+                                                            <div class="box-inner">
+                                                                <div class="product-detail-bnt"><a href="/love-fox"
+                                                                                                   class="button detail-bnt"><span>Quick View</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-info">
+                                                    <div class="info-inner">
+                                                        <div class="item-title"><a href="/list-product"
+                                                                                   title="Fox Love"> Fox Love </a></div>
+                                                        <div class="item-content">
+                                                            <div class="rating">
+                                                                <div class="ratings">
+                                                                    <div class="rating-box">
+                                                                        <div class="rating" style="width:20%"></div>
+                                                                    </div>
+                                                                    <p class="rating-links"><a href="#">1 Review(s)</a>
+                                                                        <span class="separator">|</span> <a href="#">Add
+                                                                            Review</a></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-price">
+                                                                <div class="price-box">
+                                                                    <p class="old-price"><span class="price-label">Regular Price:</span>
+                                                                        <span class="price"> $167.00 </span></p>
+                                                                    <p class="special-price"><span class="price-label">Special Price</span>
+                                                                        <span class="price"> $99.00 </span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions"><span class="add-to-links"> <a
+                                                                    href="/list-product" class="link-wishlist"
+                                                                    title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare"
+                               title="Add to Compare"><span>Add to Compare</span></a></span></div>
+                                                </div>
+                                            </div>
+                                            <strong></strong></div>
+                                    </div>
+                                </li>
+                                <li style="float: left" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="col-item">
+                                            <div class="item-inner">
+                                                <div class="item-img">
+                                                    <div class="item-img-info">
+                                                        <a href="/list-product" title="Sample Product"
+                                                           class="product-image">
+                                                            <img src="../../products-images\ruby\neck\turtle\linh-quy-ruby-thumbnail.jpg"
+                                                                 alt="Turtle Ruby">
+                                                        </a>
+                                                        <div class="item-box-hover">
+                                                            <div class="box-inner">
+                                                                <div class="product-detail-bnt"><a href="/turtle-ruby"
+                                                                                                   class="button detail-bnt"><span>Quick View</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-info">
+                                                    <div class="info-inner">
+                                                        <div class="item-title"><a href="/list-product"
+                                                                                   title="Turtle Ruby"> Turtle Ruby </a>
+                                                        </div>
+                                                        <div class="item-content">
+                                                            <div class="rating">
+                                                                <div class="ratings">
+                                                                    <div class="rating-box">
+                                                                        <div class="rating" style="width:0%"></div>
+                                                                    </div>
+                                                                    <p class="rating-links"><a href="#">1 Review(s)</a>
+                                                                        <span class="separator">|</span> <a href="#">Add
+                                                                            Review</a></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-price">
+                                                                <div class="price-box"><span
+                                                                            class="regular-price"> <span class="price">$225.00</span> </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions"><span class="add-to-links"> <a
+                                                                    href="wishlist.ejs" class="link-wishlist"
+                                                                    title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare"
+                               title="Add to Compare"><span>Add to Compare</span></a></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--                            item-->
+                                <li style="float: left" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="col-item">
+                                            <div class="item-inner">
+                                                <div class="item-img">
+                                                    <div class="new-label new-top-left">New</div>
+                                                    <div class="item-img-info">
+                                                        <a href="/list-product" title="Sample Product"
+                                                           class="product-image">
+                                                            <img src="../../products-images\ruby\neck\flower-silver-ruby-star\slide-flower-silver-ruby-star-thumbnail.jpg"
+                                                                 alt="Flower Silver">
+                                                        </a>
+                                                        <div class="item-box-hover">
+                                                            <div class="box-inner">
+                                                                <div class="product-detail-bnt"><a href="/flower-sliver"
+                                                                                                   class="button detail-bnt"><span>Quick View</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-info">
+                                                    <div class="info-inner">
+                                                        <div class="item-title"><a href="/list-product"
+                                                                                   title="Flower Silver"> Flower
+                                                                Silver </a></div>
+                                                        <div class="item-content">
+                                                            <div class="rating">
+                                                                <div class="ratings">
+                                                                    <div class="rating-box">
+                                                                        <div class="rating" style="width:80%"></div>
+                                                                    </div>
+                                                                    <p class="rating-links"><a href="#">1 Review(s)</a>
+                                                                        <span class="separator">|</span> <a href="#">Add
+                                                                            Review</a></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-price">
+                                                                <div class="price-box"><span
+                                                                            class="regular-price"> <span class="price">$125.00</span> </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions"><span class="add-to-links"> <a
+                                                                    href="wishlist.ejs" class="link-wishlist"
+                                                                    title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare"
+                               title="Add to Compare"><span>Add to Compare</span></a></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="float: left" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="col-item">
+                                            <div class="item-inner">
+                                                <div class="item-img">
+                                                    <div class="new-label new-top-left">New</div>
+                                                    <div class="item-img-info">
+                                                        <a href="/list-product" title="Sample Product"
+                                                           class="product-image">
+                                                            <img src="../../products-images\ruby\bracelet\lotus-ruby-bracelet\lotus-ruby-bracelet-thumbnail.jpg"
+                                                                 alt="Lotus Ruby">
+                                                        </a>
+                                                        <div class="item-box-hover">
+                                                            <div class="box-inner">
+                                                                <div class="product-detail-bnt"><a
+                                                                            href="/lotus-ruby-bracelet"
+                                                                            class="button detail-bnt"><span>Quick View</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-info">
+                                                    <div class="info-inner">
+                                                        <div class="item-title"><a href="/list-product"
+                                                                                   title="Lotus Ruby"> Lotus Ruby
+                                                                Bracelet</a></div>
+                                                        <div class="item-content">
+                                                            <div class="rating">
+                                                                <div class="ratings">
+                                                                    <div class="rating-box">
+                                                                        <div class="rating" style="width:80%"></div>
+                                                                    </div>
+                                                                    <p class="rating-links"><a href="#">1 Review(s)</a>
+                                                                        <span class="separator">|</span> <a href="#">Add
+                                                                            Review</a></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-price">
+                                                                <div class="price-box"><span
+                                                                            class="regular-price"> <span class="price">$125.00</span> </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions"><span class="add-to-links"> <a
+                                                                    href="wishlist.ejs" class="link-wishlist"
+                                                                    title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare"
+                               title="Add to Compare"><span>Add to Compare</span></a></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="float: left" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="col-item">
+                                            <div class="item-inner">
+                                                <div class="item-img">
+                                                    <div class="item-img-info">
+                                                        <a href="/list-product" title="Sample Product"
+                                                           class="product-image">
+                                                            <img src="../../products-images\ruby\neck\turtle\linh-quy-ruby-thumbnail.jpg"
+                                                                 alt="Turtle Ruby">
+                                                        </a>
+                                                        <div class="item-box-hover">
+                                                            <div class="box-inner">
+                                                                <div class="product-detail-bnt"><a href="/turtle-ruby"
+                                                                                                   class="button detail-bnt"><span>Quick View</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-info">
+                                                    <div class="info-inner">
+                                                        <div class="item-title"><a href="/list-product"
+                                                                                   title="Turtle Ruby"> Turtle Ruby </a>
+                                                        </div>
+                                                        <div class="item-content">
+                                                            <div class="rating">
+                                                                <div class="ratings">
+                                                                    <div class="rating-box">
+                                                                        <div class="rating" style="width:0%"></div>
+                                                                    </div>
+                                                                    <p class="rating-links"><a href="#">1 Review(s)</a>
+                                                                        <span class="separator">|</span> <a href="#">Add
+                                                                            Review</a></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-price">
+                                                                <div class="price-box"><span
+                                                                            class="regular-price"> <span class="price">$225.00</span> </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions"><span class="add-to-links"> <a
+                                                                    href="wishlist.ejs" class="link-wishlist"
+                                                                    title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare"
+                               title="Add to Compare"><span>Add to Compare</span></a></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--                            item-->
+                                <li style="float: left" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="col-item">
+                                            <div class="item-inner">
+                                                <div class="item-img">
+                                                    <div class="new-label new-top-left">New</div>
+                                                    <div class="item-img-info">
+                                                        <a href="/list-product" title="Sample Product"
+                                                           class="product-image">
+                                                            <img src="../../products-images\ruby\neck\flower-silver-ruby-star\slide-flower-silver-ruby-star-thumbnail.jpg"
+                                                                 alt="Flower Silver">
+                                                        </a>
+                                                        <div class="item-box-hover">
+                                                            <div class="box-inner">
+                                                                <div class="product-detail-bnt"><a href="/flower-sliver"
+                                                                                                   class="button detail-bnt"><span>Quick View</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-info">
+                                                    <div class="info-inner">
+                                                        <div class="item-title"><a href="/list-product"
+                                                                                   title="Flower Silver"> Flower
+                                                                Silver </a></div>
+                                                        <div class="item-content">
+                                                            <div class="rating">
+                                                                <div class="ratings">
+                                                                    <div class="rating-box">
+                                                                        <div class="rating" style="width:80%"></div>
+                                                                    </div>
+                                                                    <p class="rating-links"><a href="#">1 Review(s)</a>
+                                                                        <span class="separator">|</span> <a href="#">Add
+                                                                            Review</a></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-price">
+                                                                <div class="price-box"><span
+                                                                            class="regular-price"> <span class="price">$125.00</span> </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions"><span class="add-to-links"> <a
+                                                                    href="wishlist.ejs" class="link-wishlist"
+                                                                    title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare"
+                               title="Add to Compare"><span>Add to Compare</span></a></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="float: left" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="col-item">
+                                            <div class="item-inner">
+                                                <div class="item-img">
+                                                    <div class="new-label new-top-left">New</div>
+                                                    <div class="item-img-info">
+                                                        <a href="/list-product" title="Sample Product"
+                                                           class="product-image">
+                                                            <img src="../../products-images\ruby\bracelet\lotus-ruby-bracelet\lotus-ruby-bracelet-thumbnail.jpg"
+                                                                 alt="Lotus Ruby">
+                                                        </a>
+                                                        <div class="item-box-hover">
+                                                            <div class="box-inner">
+                                                                <div class="product-detail-bnt"><a
+                                                                            href="/lotus-ruby-bracelet"
+                                                                            class="button detail-bnt"><span>Quick View</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-info">
+                                                    <div class="info-inner">
+                                                        <div class="item-title"><a href="/list-product"
+                                                                                   title="Lotus Ruby"> Lotus Ruby
+                                                                Bracelet</a></div>
+                                                        <div class="item-content">
+                                                            <div class="rating">
+                                                                <div class="ratings">
+                                                                    <div class="rating-box">
+                                                                        <div class="rating" style="width:80%"></div>
+                                                                    </div>
+                                                                    <p class="rating-links"><a href="#">1 Review(s)</a>
+                                                                        <span class="separator">|</span> <a href="#">Add
+                                                                            Review</a></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-price">
+                                                                <div class="price-box"><span
+                                                                            class="regular-price"> <span class="price">$125.00</span> </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions"><span class="add-to-links"> <a
+                                                                    href="wishlist.ejs" class="link-wishlist"
+                                                                    title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                            <button title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
+                            <a href="compare.html" class="link-compare"
+                               title="Add to Compare"><span>Add to Compare</span></a></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
 
                             </div>
                         </ul>

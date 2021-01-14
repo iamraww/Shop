@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Tables</title>
+    <link href="../../css/vendor/all.min.css" rel="stylesheet">
+    <link
+            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+            rel="stylesheet">
+
+    <link href="../../css/sb-admin-2.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--    bootstrap-->
+</head>
+
+<body id="page-top" style="font-size: medium">
+
+<!--<div id="wrapper">-->
+<%- include('../partials/header'); %>
+<div class="row">
+    <h1>
+        Create Product
+    </h1>
+</div>
+<form action="/admin/create" method="post">
+    <div class="form-detail">
+        <div class="form-info col-md-6 col-xs-12">
+            <div class="group text-center">
+                <input class="control-custom" type="text" placeholder="Name" name="name">
+                <span class="bar"></span>
+            </div>
+            <div class="group text-center">
+                <input class="control-custom" type="text" placeholder="Image" name="thumbnail"/>
+                <span class="bar"></span>
+            </div>
+            <div class="group text-center">
+                <input class="control-custom" type="text" placeholder="Price" name="price"/>
+                <span class="bar"></span>
+            </div>
+            <div class="group text-center">
+                <input class="control-custom" type="text" placeholder="Status" name="status"/>
+                <span class="bar"></span>
+            </div>
+            <div class="group text-center">
+                <input class="control-custom" type="text" placeholder="Hastag" name="tag"/>
+                <span class="bar"></span>
+            </div>
+
+            <!--            <div class="group text-center">-->
+            <!--                <label for="cars">Status</label>-->
+            <!--                <select>-->
+            <!--                    <option value="volvo">Default</option>-->
+            <!--                    <option value="saab">New</option>-->
+            <!--                    <option value="opel">Sale</option>-->
+            <!--                </select>-->
+            <!--            </div>-->
+            <div class="form-button text-center left">
+                <button class="btn btn-info" type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+
+</body>
+
+</html>

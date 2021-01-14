@@ -4,7 +4,7 @@ const productController = require('../controllers/admin/products');
 
 
 // route.get('/admin/index', function (request, response) {
-//     response.render('admin/dashboard.ejs', { title: 'Index'});
+//     response.render('admin/table.ejs', { title: 'Index'});
 // })
 
 

@@ -2,7 +2,10 @@
 <html>
 <head>
     <style>
-        .phone-mobile {display: none;}
+        .phone-mobile {
+            display: none;
+        }
+
         .giuseart-nav {
             position: fixed;
             left: 13px;
@@ -14,10 +17,19 @@
             padding: 10px 0;
             border: 1px solid #f2f2f2;
         }
-        .giuseart-nav ul {list-style: none;padding: 0;margin: 0;}
-        .giuseart-nav ul li {list-style: none!important;}
-        .giuseart-nav ul>li a {
-            border:none;
+
+        .giuseart-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .giuseart-nav ul li {
+            list-style: none !important;
+        }
+
+        .giuseart-nav ul > li a {
+            border: none;
             padding: 3px;
             display: block;
             border-radius: 5px;
@@ -30,80 +42,108 @@
             max-height: 54px;
             text-decoration: none;
         }
-        .giuseart-nav ul>li .chat_animation{display:none}
-        .giuseart-nav ul>li a i.ticon-heart {
+
+        .giuseart-nav ul > li .chat_animation {
+            display: none
+        }
+
+        .giuseart-nav ul > li a i.ticon-heart {
             background: url(http://fashion3.ninhbinhweb.biz/wp-content/uploads/2020/03/icon-map.png) no-repeat;
             background-size: contain;
             width: 36px;
             height: 36px;
             display: block;
         }
-        .giuseart-nav ul>li a i.ticon-zalo-circle2 {
+
+        .giuseart-nav ul > li a i.ticon-zalo-circle2 {
             background: url(http://fashion3.ninhbinhweb.biz/wp-content/uploads/2020/03/icon-zalo-circle2.png.pagespeed.ce_.iUc59tfITH.png) no-repeat;
             background-size: contain;
             width: 36px;
             height: 36px;
             display: block;
-        }.giuseart-nav li .button {
-             background: transparent;
-         }.giuseart-nav ul>li a i.ticon-angle-up {
-              background: url(http://fashion3.ninhbinhweb.biz/wp-content/uploads/2020/03/icon-angle-up.png.pagespeed.ce_.NGU5VowWiC.png) no-repeat;
-              background-size: contain;
-              width: 36px;
-              height: 36px;
-              display: block;
-          }.giuseart-nav ul>li a i {
-               width: 33px;
-               height: 33px;
-               display: block;
-               margin: auto;
-           }.giuseart-nav ul li .button .btn_phone_txt {
-                position: relative; top:35px;
-                font-size: 10px;
-                font-weight: bold;
-                text-transform: none;
-            }
+        }
+
+        .giuseart-nav li .button {
+            background: transparent;
+        }
+
+        .giuseart-nav ul > li a i.ticon-angle-up {
+            background: url(http://fashion3.ninhbinhweb.biz/wp-content/uploads/2020/03/icon-angle-up.png.pagespeed.ce_.NGU5VowWiC.png) no-repeat;
+            background-size: contain;
+            width: 36px;
+            height: 36px;
+            display: block;
+        }
+
+        .giuseart-nav ul > li a i {
+            width: 33px;
+            height: 33px;
+            display: block;
+            margin: auto;
+        }
+
+        .giuseart-nav ul li .button .btn_phone_txt {
+            position: relative;
+            top: 35px;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: none;
+        }
+
         .giuseart-nav ul li .button .phone_animation i {
             display: inline-block;
             width: 27px;
             font-size: 26px;
             margin-top: 12px;
-        }.giuseart-nav ul>li a.chat_animation svg {
-             margin: -13px 0 -20px;
-         }
-        .giuseart-nav ul>li a i.ticon-messenger {
+        }
+
+        .giuseart-nav ul > li a.chat_animation svg {
+            margin: -13px 0 -20px;
+        }
+
+        .giuseart-nav ul > li a i.ticon-messenger {
             background: url(http://fashion3.ninhbinhweb.biz/wp-content/uploads/2020/03/icon-messenger.png.pagespeed.ce_.sSebhnGGgP.png) no-repeat;
             background-size: contain;
             width: 36px;
             height: 36px;
             display: block;
-        }.giuseart-nav ul li .button .phone_animation i {
-             display: inline-block;
-             width: 27px;
-             font-size: 26px;
-             margin-top: 12px;
-         }
-        .giuseart-nav ul>li a i.ticon-chat-sms {
+        }
+
+        .giuseart-nav ul li .button .phone_animation i {
+            display: inline-block;
+            width: 27px;
+            font-size: 26px;
+            margin-top: 12px;
+        }
+
+        .giuseart-nav ul > li a i.ticon-chat-sms {
             background: url(http://fashion3.ninhbinhweb.biz/wp-content/uploads/2020/03/icon-sms-1.jpg) no-repeat;
             background-size: contain;
             width: 38px;
             height: 36px;
             display: block;
         }
-        .giuseart-nav ul>li a i.icon-phone-w {
+
+        .giuseart-nav ul > li a i.icon-phone-w {
             background: url(http://fashion3.ninhbinhweb.biz/wp-content/uploads/2020/03/icon-phone-w.png) no-repeat;
-            background-size: contain;}
+            background-size: contain;
+        }
+
         .giuseart-nav ul li .button .btn_phone_txt {
             position: relative;
         }
-        @media only screen and (max-width: 600px){
-            .giuseart-nav li .chat_animation{display:block !Important}
 
-            .giuseart-nav li .button .phone_animation {box-shadow: none;
+        @media only screen and (max-width: 600px) {
+            .giuseart-nav li .chat_animation {
+                display: block !Important
+            }
+
+            .giuseart-nav li .button .phone_animation {
+                box-shadow: none;
                 position: absolute;
                 top: -16px;
                 left: 50%;
-                transform: translate(-50%,0);
+                transform: translate(-50%, 0);
                 width: 50px;
                 height: 50px;
                 border-radius: 100%;
@@ -111,10 +151,16 @@
                 line-height: 15px;
                 border: 2px solid white;
             }
-            .giuseart-nav ul>li a{padding:0; margin:0 auto}
+
+            .giuseart-nav ul > li a {
+                padding: 0;
+                margin: 0 auto
+            }
+
             .giuseart-nav {
                 background: white;
-                width: 100%; border-radius:0;
+                width: 100%;
+                border-radius: 0;
                 color: #fff;
                 height: 60px;
                 line-height: 50px;
@@ -126,66 +172,61 @@
                 margin: 0;
                 box-shadow: 0 4px 10px 0 #000;
             }
+
             .giuseart-nav li {
                 float: left;
                 width: 20%;
                 list-style: none;
                 height: 50px;
             }
-            .phone-mobile{display:block !important}}
 
-        body
-        {
+            .phone-mobile {
+                display: block !important
+            }
+        }
+
+        body {
             background-color: white;
         }
-        li
-        {
+
+        li {
             list-style-type: none;
             margin-left: 1vw;
         }
 
-        li:first-child
-        {
-            margin:0;
+        li:first-child {
+            margin: 0;
         }
 
-        footer
-        {
+        footer {
             padding-top: 5vh;
             padding-bottom: 2vh;
         }
 
-        .content
-        {
+        .content {
             height: 50vh;
             background-color: lightgray;
         }
 
-        .container
-        {
+        .container {
             background-color: white;
         }
 
-        .copyright,  .impressum
-        {
+        .copyright, .impressum {
             text-align: center;
         }
 
-        .logo
-        {
+        .logo {
             height: 8vh;
         }
 
-        @media (max-width: 768px)
-        {
-            li
-            {
+        @media (max-width: 768px) {
+            li {
                 margin-left: 0;
                 margin-bottom: 1vh;
             }
 
-            .sozial
-            {
+            .sozial {
                 margin-bottom: 1vh;
             }
         }
@@ -201,35 +242,35 @@
                     <div class="slider-items slider-width-col6">
 
                         <!-- Item -->
-                        <div class="item"> <a href="#x"><img src="images/b-logo1.png" alt="Image"></a> </div>
+                        <div class="item"><a href="#x"><img src="images/b-logo1.png" alt="Image"></a></div>
                         <!-- End Item -->
 
                         <!-- Item -->
-                        <div class="item"> <a href="#x"><img src="images/b-logo2.png" alt="Image"></a> </div>
+                        <div class="item"><a href="#x"><img src="images/b-logo2.png" alt="Image"></a></div>
                         <!-- End Item -->
 
                         <!-- Item -->
-                        <div class="item"> <a href="#x"><img src="images/b-logo3.png" alt="Image"></a> </div>
+                        <div class="item"><a href="#x"><img src="images/b-logo3.png" alt="Image"></a></div>
                         <!-- End Item -->
 
                         <!-- Item -->
-                        <div class="item"> <a href="#x"><img src="images/b-logo4.png" alt="Image"></a> </div>
+                        <div class="item"><a href="#x"><img src="images/b-logo4.png" alt="Image"></a></div>
                         <!-- End Item -->
 
                         <!-- Item -->
-                        <div class="item"> <a href="#x"><img src="images/b-logo5.png" alt="Image"></a> </div>
+                        <div class="item"><a href="#x"><img src="images/b-logo5.png" alt="Image"></a></div>
                         <!-- End Item -->
 
                         <!-- Item -->
-                        <div class="item"> <a href="#x"><img src="images/b-logo6.png" alt="Image"></a> </div>
+                        <div class="item"><a href="#x"><img src="images/b-logo6.png" alt="Image"></a></div>
                         <!-- End Item -->
 
                         <!-- Item -->
-                        <div class="item"> <a href="#x"><img src="images/b-logo1.png" alt="Image"></a> </div>
+                        <div class="item"><a href="#x"><img src="images/b-logo1.png" alt="Image"></a></div>
                         <!-- End Item -->
 
                         <!-- Item -->
-                        <div class="item"> <a href="#x"><img src="images/b-logo4.png" alt="Image"></a> </div>
+                        <div class="item"><a href="#x"><img src="images/b-logo4.png" alt="Image"></a></div>
                         <!-- End Item -->
 
                     </div>
@@ -240,8 +281,11 @@
 </div>
 <div class="giuseart-nav">
     <ul>
-        <li><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.096814183571!2d105.78009371488338!3d21.028811885998312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455f9bdf0e1c7%3A0x26caee8e7662dd9b!2zRlBUIEFwdGVjaCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1609834538191!5m2!1svi!2s" rel="nofollow" target="_blank"><i class="ticon-heart"></i>Tìm đường</a></li>
-        <li><a href="https://zalo.me/" rel="nofollow" target="_blank"><i class="ticon-zalo-circle2"></i>Chat Zalo</a></li>
+        <li>
+            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.096814183571!2d105.78009371488338!3d21.028811885998312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455f9bdf0e1c7%3A0x26caee8e7662dd9b!2zRlBUIEFwdGVjaCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1609834538191!5m2!1svi!2s"
+               rel="nofollow" target="_blank"><i class="ticon-heart"></i>Tìm đường</a></li>
+        <li><a href="https://zalo.me/" rel="nofollow" target="_blank"><i class="ticon-zalo-circle2"></i>Chat Zalo</a>
+        </li>
         <li class="phone-mobile">
             <a href="tel:0987654321" rel="nofollow" class="button">
                             <span class="phone_animation animation-shadow">
@@ -250,7 +294,8 @@
                 <span class="btn_phone_txt">Phone</span>
             </a>
         </li>
-        <li><a href="https://www.messenger.com/t/1" rel="nofollow" target="_blank"><i class="ticon-messenger"></i>Messenger</a></li>
+        <li><a href="https://www.messenger.com/t/1" rel="nofollow" target="_blank"><i class="ticon-messenger"></i>Messenger</a>
+        </li>
         <li><a href="sms:0972939830" class="chat_animation">
                 <i class="ticon-chat-sms" aria-hidden="true"></i>
                 SMS</a>
@@ -262,13 +307,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                    <div class="footer-logo"><a href="/" title="Logo"><img src="images/logo.png" width="0px" height="0px" alt="logo"></a></div>
+                    <div class="footer-logo"><a href="/" title="Logo"><img src="images/logo.png" width="0px"
+                                                                           height="0px" alt="logo"></a></div>
                     <address>
                         <i class="add-icon">&nbsp;</i>So 8 Ton That Thuyet <br>
                         Ha Noi
                     </address>
                     <div class="phone-footer"><i class="phone-icon">&nbsp;</i> +1 800 123 1234</div>
-                    <div class="email-footer"><i class="email-icon">&nbsp;</i> <a href="mailto:support@gmail.com">support@gmail.com</a> </div>
+                    <div class="email-footer"><i class="email-icon">&nbsp;</i> <a href="mailto:support@gmail.com">support@gmail.com</a>
+                    </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
                     <h4>Shopping Guide</h4>
@@ -308,7 +355,9 @@
                         <h4>Sign up for emails</h4>
                         <div class="newsletter">
                             <form>
-                                <input type="text" placeholder="Enter your email" class="input-text required-entry validate-email" title="Sign up for our newsletter" id="newsletter1" name="email">
+                                <input type="text" placeholder="Enter your email"
+                                       class="input-text required-entry validate-email"
+                                       title="Sign up for our newsletter" id="newsletter1" name="email">
                                 <button class="subscribe" title="Subscribe" type="submit"><span>Submit</span></button>
                             </form>
                         </div>
@@ -327,7 +376,8 @@
         </div>
     </div>
 
-</footer>>
+</footer>
+>
 </div>
 
 
@@ -339,7 +389,7 @@
         <p class="textcenter"> Want to speak to someone? We're here 24/7 to answer any questions. Just call!<br>
             <br>
             <span class="phone-number"> +1 800 123 1234</span></p>
-        <a id="hideDiv" class="slider-close" href="javascript:void(0)"></a> </div>
+        <a id="hideDiv" class="slider-close" href="javascript:void(0)"></a></div>
     <div class="slider-email hidden">
         <h2 class="">Let us know how we can help you.</h2>
         <form action="#" enctype="application/x-www-form-urlencoded" method="post" id="form-contact-help_slider">
@@ -385,22 +435,27 @@
     <div class="right-side-content hidden1">
         <div class="slider-email active">
             <div id="messages_product_view"></div>
-            <div id="formSuccess" style="display:none;">Your inquiry was submitted and will be responded to as soon as possible. Thank you for contacting us.</div>
+            <div id="formSuccess" style="display:none;">Your inquiry was submitted and will be responded to as soon as
+                possible. Thank you for contacting us.
+            </div>
             <form id="contactForm1" method="post">
                 <div class="column sixty">
                     <h2>TALK TO US</h2>
                     <ul>
                         <li>
                             <label>Name<em class="required">*</em></label>
-                            <input name="name" id="name" title="Name" value="" class="input-text required-entry" type="text">
+                            <input name="name" id="name" title="Name" value="" class="input-text required-entry"
+                                   type="text">
                         </li>
                         <li>
                             <label>Email<em class="required">*</em></label>
-                            <input name="email" id="email" title="Email" value="" class="input-text required-entry validate-email" type="text">
+                            <input name="email" id="email" title="Email" value=""
+                                   class="input-text required-entry validate-email" type="text">
                         </li>
                         <li>
                             <label>Telephone</label>
-                            <input name="telephone" id="telephone" title="Telephone" value="" class="input-text" type="text">
+                            <input name="telephone" id="telephone" title="Telephone" value="" class="input-text"
+                                   type="text">
                         </li>
                     </ul>
                     <p class="required">* Required Fields</p>
@@ -409,18 +464,19 @@
                 <div class="column fourty last">
                     <div class="padding">
                         <label>Comment<em class="required">*</em></label>
-                        <textarea name="comment" title="Comment" class="required-entry input-text" cols="5" rows="3"></textarea>
+                        <textarea name="comment" title="Comment" class="required-entry input-text" cols="5"
+                                  rows="3"></textarea>
                         <div class="textright">
                             <input type="text" name="hideit" value="" style="display:none !important;">
                             <button type="submit" title="Submit" class="button btn-sent"><span>Submit</span></button>
-                            <img src="images/mgkloading1.html" alt="loader" id="loader" style="display:none;"> </div>
+                            <img src="images/mgkloading1.html" alt="loader" id="loader" style="display:none;"></div>
                         <!--textright-->
                     </div>
                     <!--padding-->
                 </div>
                 <!--column fourty last-->
             </form>
-            <a href="javascript:void(0)" id="hideDiv1" class="slider-close"></a> </div>
+            <a href="javascript:void(0)" id="hideDiv1" class="slider-close"></a></div>
         <!--slider-email active-->
     </div>
     <!--right-side-content hidden1-->

@@ -20,21 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="172b61e9-1e83-494b-85f1-0a5ea327bc73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/admin/adminControllers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/public/css/vendor/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/admin/product-controller.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/models/product.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/css/sb-admin-2.min.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/css/vendor/all.min.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/css/vendor/datatables/dataTables.bootstrap4.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admin/admin.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/routes/client/index.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/routes/client/products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/add-product.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/dashboard.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/detail.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/edit.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/product-admin-route.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/admin/partials/footer.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/admin/partials/header.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/product/create.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/product/detail.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/product/edit.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/product/index.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/admin/products.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/table.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/create-product.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/products/list-product.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/products/new-arrival.ejs" afterDir="false" />
@@ -49,14 +51,117 @@
       <change afterPath="$PROJECT_DIR$/views/quick-view/turtle-ruby.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inspire Home Page1_files/mgkloading1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Inspire Home Page1_files/mgkloading1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Inspire Home Page1_files/mgkloading1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Inspire Home Page1_files/mgkloading1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/controllers/admin/adminControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/controllers/admin/adminControllers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/css/blogmate.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/css/blogmate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/css/fancybox.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/css/fancybox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/css/flexslider.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/css/flexslider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/css/font-awesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/css/owl.carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/css/owl.carousel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/css/owl.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/css/owl.theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/css/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/css/slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/css/vendor/all.min.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_close.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_close.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_nav_left.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_nav_left.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_nav_right.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_nav_right.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_shadow_e.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_shadow_e.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_shadow_n.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_shadow_n.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_shadow_ne.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_shadow_ne.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_shadow_nw.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_shadow_nw.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_shadow_s.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_shadow_s.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_shadow_se.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_shadow_se.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_shadow_sw.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_shadow_sw.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_shadow_w.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_shadow_w.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_title_left.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_title_left.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_title_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_title_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_title_right.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/fancybox/fancy_title_right.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/fancybox/fancybox/fancy_loading.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/fancybox/fancybox/fancy_loading.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/mgkloading1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/mgkloading1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/tab-pager-circle-lgray.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/tab-pager-circle-lgray.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/images/tab-pager-rounded-lgray.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/images/tab-pager-rounded-lgray.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/js/cloud-zoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/js/cloud-zoom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/js/jquery.flexslider.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/js/jquery.flexslider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/js/parallax.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/js/parallax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/js/prototype.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/js/prototype.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/js/revslider.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/js/revslider.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/js/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/js/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/js/toggle.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/js/toggle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/routes/admin/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/routes/admin/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/routes/client/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/routes/client/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/routes/client/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/routes/client/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/about-us.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/about-us.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/admin/dashboard.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/admin/dashboard.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/admin/partials/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/admin/partials/footer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/admin/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/admin/partials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/contact-us.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/contact-us.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/dashboard.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/dashboard.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/list-product.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/list-product.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/new-arrival.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/new-arrival.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/partials/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/partials/footer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/partials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/product1.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/product1.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/products/list-product.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/products/list-product.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/products/new-arrival.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/products/new-arrival.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/products/partials/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/products/partials/footer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/products/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/products/partials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/products/ruby.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/products/ruby.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/products/sale-products.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/products/sale-products.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/quick-view/flower-sliver.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/quick-view/flower-sliver.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/quick-view/lotus-ruby-bracelet.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/quick-view/lotus-ruby-bracelet.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/quick-view/lotus-ruby-ring.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/quick-view/lotus-ruby-ring.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/quick-view/love-fox.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/quick-view/love-fox.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/quick-view/quick-view.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/quick-view/quick-view.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/quick-view/sun-eyes.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/quick-view/sun-eyes.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/quick-view/turtle-ruby.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/quick-view/turtle-ruby.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/sale-products.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/sale-products.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/body-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/body-parser/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/blogmate.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/blogmate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/fancybox.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/fancybox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/flexslider.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/flexslider.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/font-awesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/owl.carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/owl.carousel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/owl.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/owl.theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/slider.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fancybox/fancy_close.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fancybox/fancy_close.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fancybox/fancy_nav_left.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fancybox/fancy_nav_left.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fancybox/fancy_nav_right.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fancybox/fancy_nav_right.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fancybox/fancy_shadow_e.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fancybox/fancy_shadow_e.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fancybox/fancy_shadow_n.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fancybox/fancy_shadow_n.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fancybox/fancy_shadow_ne.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fancybox/fancy_shadow_ne.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fancybox/fancy_shadow_nw.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fancybox/fancy_shadow_nw.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fancybox/fancy_shadow_s.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fancybox/fancy_shadow_s.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fancybox/fancy_shadow_se.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fancybox/fancy_shadow_se.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fancybox/fancy_shadow_sw.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fancybox/fancy_shadow_sw.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fancybox/fancy_shadow_w.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fancybox/fancy_shadow_w.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fancybox/fancy_title_left.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fancybox/fancy_title_left.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fancybox/fancy_title_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fancybox/fancy_title_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fancybox/fancy_title_right.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fancybox/fancy_title_right.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fancybox/fancybox/fancy_loading.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fancybox/fancybox/fancy_loading.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/tab-pager-circle-lgray.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/tab-pager-circle-lgray.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/tab-pager-rounded-lgray.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/tab-pager-rounded-lgray.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/cloud-zoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/cloud-zoom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.flexslider.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.flexslider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/parallax.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/parallax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/prototype.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/prototype.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/revslider.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/revslider.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/toggle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/toggle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/products-images/product1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/products-images/product1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/products-images/product10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/products-images/product10.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/products-images/product11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/products-images/product11.jpg" afterDir="false" />
@@ -74,9 +179,13 @@
       <change beforePath="$PROJECT_DIR$/public/products-images/product8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/products-images/product8.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/products-images/product9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/products-images/product9.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/about-us.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/about-us.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/contact-us.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/contact-us.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/list-product.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/products/sale-products.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/footer.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/product1.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/product1.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/quick-view.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/quick-view/love-fox.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,23 +219,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Asp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../codeRAR/node-modules-demo/controllers/admin/product-controller.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../codeRAR/node-crud-simple" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\Shop\views\admin\product" />
+      <recent name="C:\Users\admin\Desktop\Shop\views\products\partials" />
+      <recent name="C:\Users\admin\Desktop\CristalShop\views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\Shop\views\admin\product" />
       <recent name="C:\Users\admin\Desktop\Shop\views\products" />
       <recent name="C:\Users\admin\Desktop\Shop\routes\client" />
       <recent name="C:\Users\admin\Desktop\Shop\views\admin" />
       <recent name="C:\Users\admin\Desktop\Shop\views\quick-view" />
-      <recent name="C:\Users\admin\Desktop\magik_accord\public" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\Desktop\Shop\views\products\partials" />
-      <recent name="C:\Users\admin\Desktop\CristalShop\views" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -153,6 +263,10 @@
       <workItem from="1610436137696" duration="5705000" />
       <workItem from="1610520797759" duration="13505000" />
       <workItem from="1610543858282" duration="927000" />
+      <workItem from="1610611626602" duration="7992000" />
+      <workItem from="1610623368802" duration="2182000" />
+      <workItem from="1610625668610" duration="1085000" />
+      <workItem from="1610627631674" duration="2956000" />
     </task>
     <servers />
   </component>
@@ -180,18 +294,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610091481466" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610543538545">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610627686289">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610543538545" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610627686289" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1610111775605">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610111775605" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1610616704527">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1610616704527" />
     <state x="93" y="93" width="1350" height="638" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1610362945616">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1610362945616" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1610616704527">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1610616704527" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610111769506">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

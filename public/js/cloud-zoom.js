@@ -22,19 +22,19 @@
 
     function CloudZoom(jWin, opts) {
         var sImg = $('img', jWin);
-        var	img1;
-        var	img2;
+        var img1;
+        var img2;
         var zoomDiv = null;
-        var	$mouseTrap = null;
-        var	lens = null;
-        var	$tint = null;
-        var	softFocus = null;
-        var	$ie6Fix = null;
-        var	zoomImage;
+        var $mouseTrap = null;
+        var lens = null;
+        var $tint = null;
+        var softFocus = null;
+        var $ie6Fix = null;
+        var zoomImage;
         var controlTimer = 0;
         var cw, ch;
         var destU = 0;
-        var	destV = 0;
+        var destV = 0;
         var currV = 0;
         var currU = 0;
         var filesLoaded = 0;
@@ -119,14 +119,12 @@
 
                 if (x < 0) {
                     x = 0;
-                }
-                else if (x > (sImg.outerWidth() - cw)) {
+                } else if (x > (sImg.outerWidth() - cw)) {
                     x = (sImg.outerWidth() - cw);
                 }
                 if (y < 0) {
                     y = 0;
-                }
-                else if (y > (sImg.outerHeight() - ch)) {
+                } else if (y > (sImg.outerHeight() - ch)) {
                     y = (sImg.outerHeight() - ch);
                 }
 
@@ -172,7 +170,7 @@
              We need the dummy background image as IE does not trap mouse events on
              transparent parts of a div.
              */
-            $mouseTrap = jWin.parent().append(format("<div class='mousetrap' style='background-image:url(\""+ opts.transparentImage +"\");z-index:999;position:absolute;width:%0px;height:%1px;left:%2px;top:%3px;\'></div>", sImg.outerWidth(), sImg.outerHeight(), 0, 0)).find(':last');
+            $mouseTrap = jWin.parent().append(format("<div class='mousetrap' style='background-image:url(\"" + opts.transparentImage + "\");z-index:999;position:absolute;width:%0px;height:%1px;left:%2px;top:%3px;\'></div>", sImg.outerWidth(), sImg.outerHeight(), 0, 0)).find(':last');
 
             //////////////////////////////////////////////////////////////////////
             /* Do as little as possible in mousemove event to prevent slowdown. */
@@ -185,9 +183,15 @@
             $mouseTrap.bind('mouseleave', this, function (event) {
                 clearTimeout(controlTimer);
                 //event.data.removeBits();
-                if(lens) { lens.fadeOut(299); }
-                if($tint) { $tint.fadeOut(299); }
-                if(softFocus) { softFocus.fadeOut(299); }
+                if (lens) {
+                    lens.fadeOut(299);
+                }
+                if ($tint) {
+                    $tint.fadeOut(299);
+                }
+                if (softFocus) {
+                    softFocus.fadeOut(299);
+                }
                 zoomDiv.fadeOut(300, function () {
                     ctx.fadedOut();
                 });
@@ -258,9 +262,9 @@
                 }
 
                 // Fix ie6 select elements wrong z-index bug. Placing an iFrame over the select element solves the issue...
-                var browserCheck = /(msie) ([\w.]+)/.exec( navigator.userAgent );
+                var browserCheck = /(msie) ([\w.]+)/.exec(navigator.userAgent);
                 if (browserCheck) {
-                    if ((browserCheck[1] || "") == 'msie' && (browserCheck[2] || "0" ) < 7) {
+                    if ((browserCheck[1] || "") == 'msie' && (browserCheck[2] || "0") < 7) {
                         $ie6Fix = $('<iframe frameborder="0" src="#"></iframe>').css({
                             position: "absolute",
                             left: xPos,
@@ -309,7 +313,9 @@
                 if (!noTrans) {
                     lens.css('opacity', opts.lensOpacity);
                 }
-                if ( opts.position !== 'inside' ) { lens.fadeIn(500); }
+                if (opts.position !== 'inside') {
+                    lens.fadeIn(500);
+                }
 
                 // Start processing.
                 zw.controlLoop();
@@ -335,9 +341,10 @@
         // IE6 background image flicker fix
         try {
             document.execCommand("BackgroundImageCache", false, true);
-        } catch (e) {}
+        } catch (e) {
+        }
         this.each(function () {
-            var	relOpts, opts;
+            var relOpts, opts;
             // Hmm...eval...slap on wrist.
             eval('var	a = {' + $(this).attr('rel') + '}');
             relOpts = a;
@@ -565,12 +572,13 @@ jQuery(function ($) {
             itemsDesktopSmall = 2,
             itemsTablet = 2,
             itemsMobile = 1;
-        else if ($(this).closest("section.col-lg-9").length > 0) {var items = 3,
-            itemsDesktop = 3,
-            itemsDesktopSmall = 2,
-            itemsTablet = 2,
-            itemsMobile = 1;}
-        else if ($(this).closest("section.col-sm-12.col-lg-6").length > 0) var items = 2,
+        else if ($(this).closest("section.col-lg-9").length > 0) {
+            var items = 3,
+                itemsDesktop = 3,
+                itemsDesktopSmall = 2,
+                itemsTablet = 2,
+                itemsMobile = 1;
+        } else if ($(this).closest("section.col-sm-12.col-lg-6").length > 0) var items = 2,
             itemsDesktop = 2,
             itemsDesktopSmall = 3,
             itemsTablet = 2,
@@ -650,27 +658,29 @@ jQuery(function ($) {
     }
 
     var brandsCarousel = $(".brands-carousel ul");
-	var brandsCarouselMax = 6;
-	if ($(".content-center .brands-carousel ul").length > 0) {  brandsCarouselMax = 4 }
-	
-	if (brandsCarousel.length > 0){
-	        brandsCarousel.carouFredSel({
-					responsive: true,
-					width: '100%',
-					scroll: 1,
-					prev: '#brands-carousel-prev',
-					next: '#brands-carousel-next',
-					items: {
-						width: 170,
-						height: '30%',	//	optionally resize item-height
-						visible: {
-							min: 1,
-							max: brandsCarouselMax
-						}
-					}
-				});
+    var brandsCarouselMax = 6;
+    if ($(".content-center .brands-carousel ul").length > 0) {
+        brandsCarouselMax = 4
+    }
 
-	}
+    if (brandsCarousel.length > 0) {
+        brandsCarousel.carouFredSel({
+            responsive: true,
+            width: '100%',
+            scroll: 1,
+            prev: '#brands-carousel-prev',
+            next: '#brands-carousel-next',
+            items: {
+                width: 170,
+                height: '30%',	//	optionally resize item-height
+                visible: {
+                    min: 1,
+                    max: brandsCarouselMax
+                }
+            }
+        });
+
+    }
     var productWidgets = $(".product-widgets");
     if (productWidgets.length > 0) productWidgets.owlCarousel({
         items: 1,
