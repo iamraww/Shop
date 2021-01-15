@@ -19,6 +19,6 @@ route.get('/product/new-arrival', function (request, response) {
 
 
 route.get('/product/sale-products', function (request, response) {
-    response.render('products/sale-products.ejs', {title: 'New Sale'});
+    response.render('products/sale-overview.ejs', {title: 'New Sale'});
 })
 module.exports = route;

@@ -2,22 +2,19 @@ const Product = require('../../models/product');
 
 exports.getList = function (req, resp) {
     Product.find(function (err, data) {
-        resp.render('admin/product/index', {data: data});
+        resp.render('admin/overview', {data: data});
     });
 }
 
-exports.getDetail = function (req, resp) {
-    Product.findById(req.params.id, function (err, obj) {
-        if (err) {
-            return res.status(500).send(err);
-        } else {
-            resp.render('admin/product/detail', {obj: obj});
-        }
+exports.allProduct = function (req, resp) {
+    Product.find(function (err, data) {
+        resp.render('admin/all-products', {data: data});
     });
 }
+
 
 exports.create = function (req, resp) {
-    resp.render('admin/product/create');
+    resp.render('admin/add-product');
 }
 
 exports.save = function (req, resp) {
@@ -40,7 +37,7 @@ exports.save = function (req, resp) {
         if (err) {
             return resp.status(500).send(err);
         } else {
-            return resp.redirect('/admin/table');
+            return resp.redirect('/admin');
         }
     });
 }

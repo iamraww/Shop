@@ -1,0 +1,78 @@
+<header>
+    <div class="nav-side-menu">
+        <div class="brand"><a href="#"><img class="img-responsive margin0auto" alt=""/></a></div>
+        <div class="toggle-btn" data-toggle="collapse" data-target="#menu-content"></div>
+        <div class="menu-list">
+            <ul id="menu-content" class="menu-content">
+                <li class="active"><a href="/admin"><span class="glyphicon glyphicon-globe"
+                                                          aria-hidden="true">&nbsp;</span> Overview</a></li>
+                <li data-toggle="collapse" data-target="#product" class="collapsed">
+                    <a href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true">&nbsp;</span>Product<span
+                                class="caret"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="product">
+                    <li>
+                        <a href="/admin/all-products"><span class="glyphicon glyphicon-paperclip"
+                                          aria-hidden="true">&nbsp;</span>All Product</a></li>
+                    <li>
+                        <a href="/admin/add-product">
+                            <span class="glyphicon glyphicon-folder-open" aria-hidden="true">&nbsp;</span>Add Product</a>
+                    </li>
+                </ul>
+<!--                <li data-toggle="collapse" data-target="#media" class="collapsed">-->
+<!--                    <a href="#"><span class="glyphicon glyphicon-star" aria-hidden="true">&nbsp;</span>Đa phương-->
+<!--                        tiện<span class="caret"></span></a>-->
+<!--                </li>-->
+<!--                <ul class="sub-menu collapse" id="media">-->
+<!--                    <li><a href="#"><span class="glyphicon glyphicon-music"-->
+<!--                                          aria-hidden="true">&nbsp;</span>Âm nhạc</a></li>-->
+<!--                    <li><a href="#"><span class="glyphicon glyphicon-picture"-->
+<!--                                          aria-hidden="true">&nbsp;</span>Hình ảnh</a></li>-->
+<!--                    <li><a href="#"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true">&nbsp;</span>Phim-->
+<!--                            ảnh</a></li>-->
+<!--                </ul>-->
+<!--                <li><a href="#"><span class="glyphicon glyphicon-heart"-->
+<!--                                      aria-hidden="true">&nbsp;</span>Khách hàng</a></li>-->
+<!--                <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true">&nbsp;</span>Quản-->
+<!--                        trị viên</a></li>-->
+<!--                <li><a href="#"><span class="glyphicon glyphicon-wrench"-->
+<!--                                      aria-hidden="true">&nbsp;</span>Tùy chỉnh website</a></li>-->
+            </ul>
+            <div class="hidden-xs col-sm-5 col-md-4 col-lg-3 text-right">
+                <p id="date"></p>
+                <script>
+                    var getTime = setInterval(function () {
+                        Clock()
+                    }, 1000);
+
+                    function Clock() {
+                        n = new Date();
+                        mi = n.getMinutes();
+                        se = n.getSeconds();
+                        h = n.getHours();
+                        y = n.getFullYear();
+                        m = n.getMonth() + 1;
+                        d = n.getDate();
+                        if (10 > d) {
+                            d = "0" + d
+                        }
+                        if (10 > m) {
+                            m = "0" + m
+                        }
+                        if (10 > h) {
+                            h = "0" + h
+                        }
+                        if (10 > mi) {
+                            mi = "0" + mi
+                        }
+                        if (10 > se) {
+                            se = "0" + se
+                        }
+                        document.getElementById("date").innerHTML = h + ":" + mi + ":" + se + " " + m + "/" + d + "/" + y;
+                    }
+                </script>
+            </div>
+        </div>
+
+    </div>
+</header>

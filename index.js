@@ -20,10 +20,9 @@ const Products = require('./routes/client/products');
 app.use(indexPage);
 app.use(Products);
 // app.use(adminIndex);
-
 const productAdminRoute = require('./routes/product-admin-route');
-
 app.use('/admin/', productAdminRoute);
+
 
 
 app.get('/', function (request, response) {
