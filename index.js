@@ -23,8 +23,6 @@ app.use(Products);
 const productAdminRoute = require('./routes/product-admin-route');
 app.use('/admin/', productAdminRoute);
 
-
-
 app.get('/', function (request, response) {
     Product.find(function (err, data) {
         response.render('index.ejs', {data: data});
