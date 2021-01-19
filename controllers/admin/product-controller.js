@@ -1,5 +1,11 @@
 const Product = require('../../models/product');
 
+exports.indexProduct = function (req, resp) {
+    Product.find(function (err, data) {
+        resp.render('index', {data: data});
+    });
+}
+
 exports.getList = function (req, resp) {
     Product.find(function (err, data) {
         resp.render('admin/overview', {data: data});
@@ -32,12 +38,12 @@ exports.save = function (req, resp) {
     //     status: status
     //
     // });
-
+    console.log(req.body);
     obj.save(function (err) {
         if (err) {
             return resp.status(500).send(err);
         } else {
-            return resp.redirect('/admin');
+            return resp.redirect('/admin/all-products');
         }
     });
 }
@@ -47,7 +53,7 @@ exports.edit = function (req, resp) {
         if (err) {
             return res.status(500).send(err);
         } else {
-            resp.render('admin/product/edit', {obj: obj});
+            resp.render('admin/edit-product', {obj: obj});
         }
     });
 }
@@ -61,10 +67,35 @@ exports.update = function (req, resp) {
             if (err) {
                 return res.status(500).send(err);
             } else {
-                resp.redirect('/admin/products');
+                resp.redirect('/admin/all-products');
             }
         });
 }
+
+exports.editDetail = function (req, resp) {
+    Product.findById(req.params.id, function (err, obj) {
+        if (err) {
+            return res.status(500).send(err);
+        } else {
+            resp.render('admin/edit-detail-product', {obj: obj});
+        }
+    });
+}
+
+exports.updateDetail = function (req, resp) {
+    Product.findByIdAndUpdate(
+        req.params.id,
+        req.body,
+        {new: false},
+        function (err, obj) {
+            if (err) {
+                return res.status(500).send(err);
+            } else {
+                resp.redirect('/admin/all-products');
+            }
+        });
+}
+
 
 exports.delete = function (req, resp) {
     Product.findByIdAndRemove(

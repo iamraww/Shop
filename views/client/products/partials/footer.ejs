@@ -1,0 +1,463 @@
+<!DOCTYPE>
+<html>
+<head>
+    <style>
+        .phone-mobile {
+            display: none;
+        }
+
+        .giuseart-nav {
+            position: fixed;
+            left: 13px;
+            background: #fff;
+            border-radius: 5px;
+            width: auto;
+            z-index: 150;
+            bottom: 50px;
+            padding: 10px 0;
+            border: 1px solid #f2f2f2;
+        }
+
+        .giuseart-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .giuseart-nav ul li {
+            list-style: none !important;
+        }
+
+        .giuseart-nav ul > li a {
+            border: none;
+            padding: 3px;
+            display: block;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 10px;
+            line-height: 15px;
+            color: #515151;
+            font-weight: 700;
+            max-width: 72.19px;
+            max-height: 54px;
+            text-decoration: none;
+        }
+
+        .giuseart-nav ul > li .chat_animation {
+            display: none
+        }
+
+        .giuseart-nav ul > li a i.ticon-heart {
+            background: url(http://fashion3.ninhbinhweb.biz/wp-content/uploads/2020/03/icon-map.png) no-repeat;
+            background-size: contain;
+            width: 36px;
+            height: 36px;
+            display: block;
+        }
+
+        .giuseart-nav ul > li a i.ticon-zalo-circle2 {
+            background: url(http://fashion3.ninhbinhweb.biz/wp-content/uploads/2020/03/icon-zalo-circle2.png.pagespeed.ce_.iUc59tfITH.png) no-repeat;
+            background-size: contain;
+            width: 36px;
+            height: 36px;
+            display: block;
+        }
+
+        .giuseart-nav li .button {
+            background: transparent;
+        }
+
+        .giuseart-nav ul > li a i.ticon-angle-up {
+            background: url(http://fashion3.ninhbinhweb.biz/wp-content/uploads/2020/03/icon-angle-up.png.pagespeed.ce_.NGU5VowWiC.png) no-repeat;
+            background-size: contain;
+            width: 36px;
+            height: 36px;
+            display: block;
+        }
+
+        .giuseart-nav ul > li a i {
+            width: 33px;
+            height: 33px;
+            display: block;
+            margin: auto;
+        }
+
+        .giuseart-nav ul li .button .btn_phone_txt {
+            position: relative;
+            top: 35px;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: none;
+        }
+
+        .giuseart-nav ul li .button .phone_animation i {
+            display: inline-block;
+            width: 27px;
+            font-size: 26px;
+            margin-top: 12px;
+        }
+
+        .giuseart-nav ul > li a.chat_animation svg {
+            margin: -13px 0 -20px;
+        }
+
+        .giuseart-nav ul > li a i.ticon-messenger {
+            background: url(http://fashion3.ninhbinhweb.biz/wp-content/uploads/2020/03/icon-messenger.png.pagespeed.ce_.sSebhnGGgP.png) no-repeat;
+            background-size: contain;
+            width: 36px;
+            height: 36px;
+            display: block;
+        }
+
+        .giuseart-nav ul li .button .phone_animation i {
+            display: inline-block;
+            width: 27px;
+            font-size: 26px;
+            margin-top: 12px;
+        }
+
+        .giuseart-nav ul > li a i.ticon-chat-sms {
+            background: url(http://fashion3.ninhbinhweb.biz/wp-content/uploads/2020/03/icon-sms-1.jpg) no-repeat;
+            background-size: contain;
+            width: 38px;
+            height: 36px;
+            display: block;
+        }
+
+        .giuseart-nav ul > li a i.icon-phone-w {
+            background: url(http://fashion3.ninhbinhweb.biz/wp-content/uploads/2020/03/icon-phone-w.png) no-repeat;
+            background-size: contain;
+        }
+
+        .giuseart-nav ul li .button .btn_phone_txt {
+            position: relative;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .giuseart-nav li .chat_animation {
+                display: block !Important
+            }
+
+            .giuseart-nav li .button .phone_animation {
+                box-shadow: none;
+                position: absolute;
+                top: -16px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                background: #6cb917;
+                line-height: 15px;
+                border: 2px solid white;
+            }
+
+            .giuseart-nav ul > li a {
+                padding: 0;
+                margin: 0 auto
+            }
+
+            .giuseart-nav {
+                background: white;
+                width: 100%;
+                border-radius: 0;
+                color: #fff;
+                height: 60px;
+                line-height: 50px;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                z-index: 999;
+                padding: 5px;
+                margin: 0;
+                box-shadow: 0 4px 10px 0 #000;
+            }
+
+            .giuseart-nav li {
+                float: left;
+                width: 20%;
+                list-style: none;
+                height: 50px;
+            }
+
+            .phone-mobile {
+                display: block !important
+            }
+        }
+
+        body {
+            background-color: white;
+        }
+
+        li {
+            list-style-type: none;
+            margin-left: 1vw;
+        }
+
+        li:first-child {
+            margin: 0;
+        }
+
+        footer {
+            padding-top: 5vh;
+            padding-bottom: 2vh;
+        }
+
+        .content {
+            height: 50vh;
+            background-color: lightgray;
+        }
+
+        .container {
+            background-color: white;
+        }
+
+        .copyright, .impressum {
+            text-align: center;
+        }
+
+        .logo {
+            height: 8vh;
+        }
+
+        @media (max-width: 768px) {
+            li {
+                margin-left: 0;
+                margin-bottom: 1vh;
+            }
+
+            .sozial {
+                margin-bottom: 1vh;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="brand-logo ">
+    <div class="container">
+        <div class="row">
+            <div class="slider-items-products col-lg-12">
+                <div id="brand-logo-slider" class="product-flexslider hidden-buttons">
+                    <div class="slider-items slider-width-col6">
+
+                        <!-- Item -->
+                        <div class="item"><a href="#x"><img src="../../images/b-logo1.png" alt="Image"></a></div>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <div class="item"><a href="#x"><img src="../../images/b-logo2.png" alt="Image"></a></div>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <div class="item"><a href="#x"><img src="../../images/b-logo3.png" alt="Image"></a></div>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <div class="item"><a href="#x"><img src="../../images/b-logo4.png" alt="Image"></a></div>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <div class="item"><a href="#x"><img src="../../images/b-logo5.png" alt="Image"></a></div>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <div class="item"><a href="#x"><img src="../../images/b-logo6.png" alt="Image"></a></div>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <div class="item"><a href="#x"><img src="../../images/b-logo1.png" alt="Image"></a></div>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <div class="item"><a href="#x"><img src="../../images/b-logo4.png" alt="Image"></a></div>
+                        <!-- End Item -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-logo"><a href="/" title="Logo"><img src="../../images/logo.png" width="0px"
+                                                                           height="0px" alt="logo"></a></div>
+                    <address>
+                        <i class="add-icon">&nbsp;</i>So 8 Ton That Thuyet <br>
+                        Ha Noi
+                    </address>
+                    <div class="phone-footer"><i class="phone-icon">&nbsp;</i> +1 800 123 1234</div>
+                    <div class="email-footer"><i class="email-icon">&nbsp;</i> <a href="mailto:support@gmail.com">support@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                    <h4>Shopping Guide</h4>
+                    <ul class="links">
+                        <li class="first"><a href="#" title="How to buy">How to buy</a></li>
+                        <li><a href="#" title="FAQs">FAQs</a></li>
+                        <li><a href="#" title="Payment">Payment</a></li>
+                        <li><a href="#" title="Shipment&lt;/a&gt;">Shipment</a></li>
+                        <li><a href="#" title="Where is my order?">Where is my order?</a></li>
+                        <li class="last"><a href="#" title="Return policy">Return policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                    <h4>Style Advisor</h4>
+                    <ul class="links">
+                        <li class="first"><a href="#" title="Your Account">Your Account</a></li>
+                        <li><a href="#" title="Information">Information</a></li>
+                        <li><a href="#" title="Addresses">Addresses</a></li>
+                        <li><a href="#" title="Addresses">Discount</a></li>
+                        <li><a href="#" title="Orders History">Orders History</a></li>
+                        <li class="last"><a href="#" title=" Additional Information">Additional Information</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-3 col-xs-12">
+                    <h4>Information</h4>
+                    <ul class="links">
+                        <li class="first"><a href="#" title="Site Map">Site Map</a></li>
+                        <li><a href="#/" title="Search Terms">Search Terms</a></li>
+                        <li><a href="#" title="Advanced Search">Advanced Search</a></li>
+                        <li><a href="/contact-us" title="Contact Us">Contact Us</a></li>
+                        <li><a href="#" title="Suppliers">Suppliers</a></li>
+                        <li class=" last"><a href="#" title="Our stores" class="link-rss">Our stores</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-8 col-sm-9 col-xs-12">
+                    <div class="block-subscribe">
+                        <h4>Sign up for emails</h4>
+                        <div class="newsletter">
+                            <form>
+                                <input type="text" placeholder="Enter your email"
+                                       class="input-text required-entry validate-email"
+                                       title="Sign up for our newsletter" id="newsletter1" name="email">
+                                <button class="subscribe" title="Subscribe" type="submit"><span>Submit</span></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <h4>Follow Us</h4>
+                        <ul>
+                            <li class="fb"><a href="#"></a></li>
+                            <li class="tw"><a href="#"></a></li>
+                            <li class="rss"><a href="#"></a></li>
+                            <li class="pintrest"><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+>
+</div>
+
+
+<div id="hideShow" class="right-side-content" style="display: none;">
+    <!--Contact Static Block -->
+    <div class="slider-phone active">
+        <h2 class="">Talk To Us</h2>
+        <h3 class="">Available 24/7</h3>
+        <p class="textcenter"> Want to speak to someone? We're here 24/7 to answer any questions. Just call!<br>
+            <br>
+            <span class="phone-number"> +1 800 123 1234</span></p>
+        <a id="hideDiv" class="slider-close" href="javascript:void(0)"></a></div>
+    <div class="slider-email hidden">
+        <h2 class="">Let us know how we can help you.</h2>
+        <form action="#" enctype="application/x-www-form-urlencoded" method="post" id="form-contact-help_slider">
+            <div class="column sixty">
+                <div class="">
+                    <ul>
+                        <li>
+                            <label>First Name</label>
+                            <input type="text" name="FirstName" class="required-entry">
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <label>Last Name</label>
+                            <input type="text" name="LastName" class="required-entry">
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <label>Email Address</label>
+                            <input type="email" name="Email" class="required-entry">
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <label>Phone Number</label>
+                            <input type="text" name="Phone">
+                            <div class="clearfix"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column fourty last">
+                <div class="padding">
+                    <textarea name="Contact_Form_Message__c" class="required-entry">How can we help you?</textarea>
+                    <div class="textright">
+                        <button class="button btn-sent" title="Add to Cart" type="button"><span>Send</span></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="clearfix"></div>
+        <a class="slider-close" href="#"></a></div>
+</div>
+<div id="hideShow1" style="display: none;">
+    <div class="right-side-content hidden1">
+        <div class="slider-email active">
+            <div id="messages_product_view"></div>
+            <div id="formSuccess" style="display:none;">Your inquiry was submitted and will be responded to as soon as
+                possible. Thank you for contacting us.
+            </div>
+            <form id="contactForm1" method="post">
+                <div class="column sixty">
+                    <h2>TALK TO US</h2>
+                    <ul>
+                        <li>
+                            <label>Name<em class="required">*</em></label>
+                            <input name="name" id="name" title="Name" value="" class="input-text required-entry"
+                                   type="text">
+                        </li>
+                        <li>
+                            <label>Email<em class="required">*</em></label>
+                            <input name="email" id="email" title="Email" value=""
+                                   class="input-text required-entry validate-email" type="text">
+                        </li>
+                        <li>
+                            <label>Telephone</label>
+                            <input name="telephone" id="telephone" title="Telephone" value="" class="input-text"
+                                   type="text">
+                        </li>
+                    </ul>
+                    <p class="required">* Required Fields</p>
+                </div>
+                <!--column sixty-->
+                <div class="column fourty last">
+                    <div class="padding">
+                        <label>Comment<em class="required">*</em></label>
+                        <textarea name="comment" title="Comment" class="required-entry input-text" cols="5"
+                                  rows="3"></textarea>
+                        <div class="textright">
+                            <input type="text" name="hideit" value="" style="display:none !important;">
+                            <button type="submit" title="Submit" class="button btn-sent"><span>Submit</span></button>
+                            <img src="../../images/mgkloading1.html" alt="loader" id="loader" style="display:none;">
+                        </div>
+                        <!--textright-->
+                    </div>
+                    <!--padding-->
+                </div>
+                <!--column fourty last-->
+            </form>
+            <a href="javascript:void(0)" id="hideDiv1" class="slider-close"></a></div>
+        <!--slider-email active-->
+    </div>
+    <!--right-side-content hidden1-->
+</div>
+</body>
+</html>

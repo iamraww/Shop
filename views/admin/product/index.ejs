@@ -15,13 +15,13 @@
     <%
     for (var i = 0; i < data.length; i++) {
     %>
-    <li style="list-style: none">
-        <img src="<%= data[i].thumbnail %>" alt="" style="width: 200px">
-        <%= data[i].name %> <strong style="color:red"><%= data[i].price %></strong>
-        <a href="/admin/detail/<%= data[i]._id %>">Detail</a>
-        <a href="/admin/edit/<%= data[i]._id %>">Update</a>
-        <a href="#" class="btn-delete" id="<%= data[i]._id %>">Delete</a>
-    </li>
+        <li style="list-style: none">
+            <img src="<%= data[i].thumbnail %>" alt="" style="width: 200px">
+            <%= data[i].name %> <strong style="color:red"><%= data[i].price %></strong>
+            <a href="/admin/detail/<%= data[i]._id %>">Detail</a>
+            <a href="/admin/edit/<%= data[i]._id %>">Update</a>
+            <a href="#" class="btn-delete" id="<%= data[i]._id %>">Delete</a>
+        </li>
     <%
     }
     %>
@@ -30,10 +30,10 @@
     const arrayBtnDelete = document.getElementsByClassName('btn-delete');
     for (let i = 0; i < arrayBtnDelete.length; i++) {
         arrayBtnDelete[i].onclick = function () {
-            if(confirm('May co chac khong?')){
+            if (confirm('May co chac khong?')) {
                 var xhr = new XMLHttpRequest();
-                xhr.onreadystatechange = function(){
-                    if(this.readyState==4 &&  this.status == 200){
+                xhr.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
                         alert('Xoá thành công');
                         window.location.reload();
                     }

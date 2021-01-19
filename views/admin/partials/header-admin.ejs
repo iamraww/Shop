@@ -1,11 +1,10 @@
 <header>
     <div class="nav-side-menu">
-        <div class="brand"><a href="#"><img class="img-responsive margin0auto" alt=""/></a></div>
-        <div class="toggle-btn" data-toggle="collapse" data-target="#menu-content"></div>
         <div class="menu-list">
             <ul id="menu-content" class="menu-content">
                 <li class="active"><a href="/admin"><span class="glyphicon glyphicon-globe"
                                                           aria-hidden="true">&nbsp;</span> Overview</a></li>
+                <!--                product-->
                 <li data-toggle="collapse" data-target="#product" class="collapsed">
                     <a href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true">&nbsp;</span>Product<span
                                 class="caret"></span></a>
@@ -13,13 +12,28 @@
                 <ul class="sub-menu collapse" id="product">
                     <li>
                         <a href="/admin/all-products"><span class="glyphicon glyphicon-paperclip"
-                                          aria-hidden="true">&nbsp;</span>All Product</a></li>
+                                                            aria-hidden="true">&nbsp;</span>All Product</a></li>
                     <li>
                         <a href="/admin/add-product">
-                            <span class="glyphicon glyphicon-folder-open" aria-hidden="true">&nbsp;</span>Add Product</a>
+                            <span class="glyphicon glyphicon-folder-open" aria-hidden="true">&nbsp;</span>Add
+                            Product</a>
                     </li>
                 </ul>
+                <!--                end product-->
+                <!--                post-->
+                <li data-toggle="collapse" data-target="#post" class="collapsed">
+                    <a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true">&nbsp;</span>Post<span
+                                class="caret"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="post">
+                    <li><a href=""><span class="glyphicon glyphicon-paperclip" aria-hidden="true">&nbsp;</span>All Post</a>
+                    </li>
+                    <li><a href=""><span class="glyphicon glyphicon-folder-open" aria-hidden="true">&nbsp;</span>Add
+                            Post</a></li>
+                </ul>
+                <!--                end post-->
             </ul>
+
             <div class="hidden-xs col-sm-5 col-md-4 col-lg-3 text-right">
                 <p id="date" style="color:white;"></p>
                 <script>

@@ -20,15 +20,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="172b61e9-1e83-494b-85f1-0a5ea327bc73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/client/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/edit-detail-product.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/edit-product.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/partials/navbar.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/client/index.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/client/products/list-product.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/client/products/new-arrival.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/client/products/partials/footer.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/client/products/partials/header.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/client/products/sale-products.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop" beforeDir="false" afterPath="$PROJECT_DIR$/Shop" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/public/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/css/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/views/admin/add-product.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/admin/add-product.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/public/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/public/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/routes/product-admin-route.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/routes/product-admin-route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/admin/all-products.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/admin/all-products.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/views/admin/overview.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/admin/overview.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/views/admin/partials/header-admin.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/admin/partials/header-admin.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/views/admin/product/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/views/admin/product/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/admin/product-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/admin/product-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/domain.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/domain.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/events.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/events.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/stream.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/stream.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/History.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/dist/browser.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/dist/browser.umd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/document.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/schematype.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schematype.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/client/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/client/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/client/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/client/products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/product-admin-route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/product-admin-route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/about-us.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/about-us.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/aboutUs.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/aboutUs.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/add-product.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/add-product.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/all-products.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/all-products.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/overview.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/overview.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/partials/header-admin.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/partials/header-admin.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/contact-us.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/contact-us.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/create-product.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/create-product.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/products/ruby.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/partials/footer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/partials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/product1.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/product1.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/products/list-product.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/products/new-arrival.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/products/partials/footer.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/products/partials/header.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/products/ruby.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/products/sale-products.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/quick-view/flower-sliver.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/quick-view/flower-sliver.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/quick-view/lotus-ruby-bracelet.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/quick-view/lotus-ruby-bracelet.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/quick-view/lotus-ruby-ring.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/quick-view/lotus-ruby-ring.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/quick-view/love-fox.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/quick-view/love-fox.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/quick-view/quick-view.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/quick-view.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/quick-view/sun-eyes.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/quick-view/sun-eyes.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/quick-view/turtle-ruby.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/quick-view/turtle-ruby.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +121,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Asp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../codeRAR/node-modules-demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../node-crud-simple/node-crud-simple/views/admin/product/form.ejs" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
@@ -69,19 +129,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\Shop\views\admin" />
+      <recent name="C:\Users\admin\Desktop\Shop\views\client\products" />
+      <recent name="C:\Users\admin\Desktop\Shop\public\css" />
+      <recent name="C:\Users\admin\Desktop\Shop\public" />
+      <recent name="C:\Users\admin\Desktop\Shop\public\js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\Shop\views\client" />
       <recent name="C:\Users\admin\Desktop\Shop\views\admin\product" />
       <recent name="C:\Users\admin\Desktop\Shop\views\products" />
       <recent name="C:\Users\admin\Desktop\Shop\routes\client" />
       <recent name="C:\Users\admin\Desktop\Shop\views\admin" />
-      <recent name="C:\Users\admin\Desktop\Shop\views\quick-view" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\Desktop\Shop\public\css" />
-      <recent name="C:\Users\admin\Desktop\Shop\public" />
-      <recent name="C:\Users\admin\Desktop\Shop\views\admin" />
-      <recent name="C:\Users\admin\Desktop\Shop\public\js" />
-      <recent name="C:\Users\admin\Desktop\Shop\public\images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -114,7 +174,11 @@
       <workItem from="1610627631674" duration="2956000" />
       <workItem from="1610653926430" duration="12223000" />
       <workItem from="1610690259552" duration="6058000" />
-      <workItem from="1610705795960" duration="4729000" />
+      <workItem from="1610705795960" duration="14838000" />
+      <workItem from="1610905803784" duration="3381000" />
+      <workItem from="1610909241147" duration="1837000" />
+      <workItem from="1610951136919" duration="9439000" />
+      <workItem from="1610968971357" duration="10487000" />
     </task>
     <servers />
   </component>
@@ -142,10 +206,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610091481466" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610706497206">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610975555958">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610706497206" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610975555958" />
     <state x="234" y="96" width="981" height="708" key="SettingsEditor" timestamp="1610790598334">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -154,14 +218,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610111775605" />
-    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1610616704527">
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1610979500111">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1610616704527" />
-    <state x="93" y="93" width="1350" height="638" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1610663880895">
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1610979500111" />
+    <state x="93" y="93" width="1350" height="638" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1610979256291">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1610663880895" />
+    <state x="93" y="93" width="1350" height="638" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1610979256291" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1610616704527">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -170,6 +234,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1610111769506" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1610909166086">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1610909166086" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610096343948">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
