@@ -10,7 +10,7 @@ route.get('/product/ruby', function (request, response) {
 })
 
 route.get('/product/product1', function (request, response) {
-    response.render('client/products/product1.ejs', {title: 'Pearl Libel'});
+    response.render('client/products/product.ejs', {title: 'Pearl Libel'});
 })
 
 route.get('/product/new-arrival', function (request, response) {

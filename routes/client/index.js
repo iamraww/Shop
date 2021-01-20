@@ -9,7 +9,7 @@ route.get('/about-us', function (request, response) {
 })
 
 route.get('/quick-view', function (request, response) {
-    response.render('client/quick-view/quick-view.ejs', {title: 'Quick View'});
+    response.render('client/quick-view/product-detail.ejs', {title: 'Quick View'});
 })
 
 route.get('/lotus-ruby-ring', function (request, response) {
