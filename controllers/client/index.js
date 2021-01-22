@@ -1,4 +1,4 @@
-// const Product = require('../../models/product');
+// const Product = require('../../modules/product');
 //
 //
 // exports.indexProduct = function (req, resp) {
