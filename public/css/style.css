@@ -1,6 +1,5 @@
 
 body {
-    border-top: 4px solid #000;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -1339,13 +1338,7 @@ ul.level1 {
     color: #ffffff;
 }
 
-li.level0 > a > span > .cat-label-label1.pin-bottom:before {
-    border-top-color: #D12631;
-}
 
-li.level0 > a > span > .cat-label-label2.pin-bottom:before {
-    border-top-color: #d52462;
-}
 
 li > a:hover > span > .cat-label, #nav li.level0:hover > a > span > .cat-label {
     background-color: #ff7214;
@@ -1358,7 +1351,6 @@ li.level0 > a:hover > span > .pin-bottom:before, #nav li.level0:hover > a > span
 #nav .level0-wrapper, #nav.classic .parent > ul {
     background: #fff;
     border-top: none;
-    border-bottom: 5px #ff1341 solid;
     box-shadow: 0 0 20px -5px;
 }
 

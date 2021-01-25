@@ -80,30 +80,24 @@
                             <div class="product-flexslider hidden-buttons">
                                 <div class="row">
                                     <%
-                                    for (var i = 0; i < 8; i++) {
+                                    var num = 0
+                                    for (var i = data.length - 1 ; i >= 0 ; i--) {
+                                    num++
                                     %>
-                                        <div class="item col-lg-3">
+                                        <div class="item col-lg-3 ">
                                             <div class="col-item">
                                                 <div class="item-inner">
                                                     <div class="item-img">
                                                         <div class="item-img-info">
-                                                            <a href="/list-product" title="Sample Product"
+                                                            <a href="/product/<%= data[i]._id %>" title="Sample Product"
                                                                class="product-image">
-                                                                <img src="https://res.cloudinary.com/iamraw/image/upload/<%= data[i].thumbnail %>.jpg" alt="Sample Product">
+                                                                <img src="https://res.cloudinary.com/iamraw/image/upload/<%= data[i].thumbnail %>.jpg" alt="<%= data[i].name %>">
                                                             </a>
-                                                            <div class="item-box-hover">
-                                                                <div class="box-inner">
-                                                                    <div class="product-detail-bnt"><a
-                                                                                href="/lotus-ruby-ring"
-                                                                                class="button detail-bnt">
-                                                                            <span> Quick View</span></a></div>
-                                                                </div>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="item-info">
                                                         <div class="info-inner">
-                                                            <div class="item-title"><a href="/list-product"
+                                                            <div class="item-title"><a href="/product/<%= data[i]._id %>"
                                                                                        title="Lotus Ruby Ring"><%= data[i].name %></a>
                                                             </div>
                                                             <div class="item-content">
@@ -138,6 +132,9 @@
                                             </div>
                                         </div>
                                     <%
+                                    if(num  == 8) {
+                                        break;
+                                        } else { continue}
                                     }
                                     %>
                                 </div>

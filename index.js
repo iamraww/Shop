@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const Product = require('./models/product');
+const Product = require('./modules/product');
 const port = 8888;
 
 app.use(express.static('public'))
@@ -22,18 +22,26 @@ app.use(bodyParser.urlencoded({extended: false}));
 // body-parser
 
 const productAdminRoute = require('./routes/product-admin-route');
+const clienRoute = require('./routes/clientRoutes');
 const indexPage = require('./routes/client/index');
 const Products = require('./routes/client/products');
 
 
 app.use(indexPage);
 app.use(Products);
-app.use('/admin/', productAdminRoute);
+app.use(productAdminRoute);
+app.use(clienRoute);
 
 
 app.get('/', function (request, response) {
     Product.find(function (err, data) {
         response.render('client/index.ejs', {data: data});
+    });
+})
+
+app.get('/test', function (request, response) {
+    Product.find(function (err, data) {
+        response.render('client/test.ejs', {data: data});
     });
 })
 

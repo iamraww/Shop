@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>CrShop</title>
+
+    <link rel="icon" href="http://demo.magikthemes.com/skin/frontend/base/default/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="http://demo.magikthemes.com/skin/frontend/base/default/favicon.ico"
+          type="image/x-icon"/>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <link rel="stylesheet" href="/./css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/./css/slider.css" type="text/css">
+    <link rel="stylesheet" href="/./css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="/./css/owl.theme.css" type="text/css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/./css/style.css" type="text/css">
+
+    <link href='https://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="cms-index-index" style="color:black">
+<%- include('partials/header'); %>
+<!-- header -->
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="home"><a href="/" title="Go to Home Page">Home</a><span>»</span></li>
+                <!--                <li class=""> <a <&#45;&#45; onclick="history.back();" &ndash;&gt; ></a><span>»</span></li>-->
+                <li class=""><a href="/product/ruby"><%= obj.stone %></a><span>»</span></li>
+                <li class="category13"><strong> <%= obj.name %> </strong></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<section class="main-container col1-layout">
+    <div class="main container">
+        <div class="col-main">
+            <div class="row">
+                <div class="product-view">
+                    <div class="product-essential">
+                        <form action="#" method="post" id="product_addtocart_form">
+                            <input name="form_key" value="6UbXroakyQlbfQzK" type="hidden">
+                            <div class="product-img-box col-sm-4 col-xs-12">
+                                <div class="product-image">
+                                    <div class="large-image"><a
+                                                href="https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail %>.jpg"
+                                                class="cloud-zoom" id="zoom1"
+                                                rel="useWrapper: false, adjustY:0, adjustX:20"> <img alt="product-image"
+                                                                                                     src="https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail %>.jpg">
+                                        </a></div>
+                                    <div class="flexslider flexslider-thumb">
+                                        <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                                            <ul class="previews-list slides"
+                                                style="width: 1000%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                                <li style="width: 75px; float: left; display: block;"><a
+                                                            href="https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail1 %>.jpg"
+                                                            class="cloud-zoom-gallery"
+                                                            rel="useZoom: 'zoom1', smallImage: 'https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail1 %>.jpg' "><img
+                                                                src="https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail1 %>.jpg"
+                                                                alt="Thumbnail 1" draggable="false"></a></li>
+                                                <li style="width: 75px; float: left; display: block;"><a
+                                                            href="https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail2 %>.jpg"
+                                                            class="cloud-zoom-gallery"
+                                                            rel="useZoom: 'zoom1', smallImage: 'https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail2 %>.jpg' "><img
+                                                                src="https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail2 %>.jpg"
+                                                                alt="Thumbnail 2" draggable="false"></a></li>
+                                                <li style="width: 75px; float: left; display: block;"><a
+                                                            href="https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail3 %>.jpg"
+                                                            class="cloud-zoom-gallery"
+                                                            rel="useZoom: 'zoom1', smallImage: 'https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail3 %>.jpg' "><img
+                                                                src="https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail3 %>.jpg"
+                                                                alt="Thumbnail 1" draggable="false"></a></li>
+                                            </ul>
+                                        </div>
+                                        <ul class="flex-direction-nav">
+                                            <li>
+                                                <a class="flex-prev flex-disabled" href="#" tabindex="-1">
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="flex-next" href="#"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- end: more-images -->
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="product-shop col-sm-5 col-xs-12">
+                                <div class="product-next-prev"><a class="product-next" href="#"><span></span></a> <a
+                                            class="product-prev" href="#"><span></span></a></div>
+                                <div class="product-name">
+                                    <h1><%= obj.name %></h1>
+                                </div>
+                                <div class="short-description">
+                                    <p><%= obj.detail %></p>
+                                </div>
+                                <div class="ratings">
+                                    <div class="rating-box">
+                                        <div style="width:60%" class="rating"></div>
+                                    </div>
+                                    <p><a href="#">1 Review(s)</a> <span>|</span> <a href="#">Add Your Review</a></p>
+                                </div>
+                                <p class="availability in-stock">Availability: <span>In Stock</span></p>
+                                <div class="price-block">
+                                    <div class="price-box">
+                                        <p class="special-price"><span class="price-label">Price</span> <span
+                                                    class="price"> $<%= obj.price %> </span></p>
+                                    </div>
+                                </div>
+                                <div class="add-to-box">
+                                    <div class="add-to-cart">
+                                        <label>Qty :</label>
+                                        <select>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                        </select>
+                                    </div>
+                                    <button type="button" title="Add to Cart" class="button btn-cart">
+                                        <span>Add to Cart</span></button>
+                                </div>
+                                <div class="email-addto-box">
+                                    <p class="email-friend"><a href="#" data-toggle="tooltip" data-placement="top"
+                                                               data-original-title="Email to a Friend"><span></span></a>
+                                    </p>
+                                    <ul class="add-to-links">
+                                        <li><span class="separator">|</span> <a class="link-compare" href="+"
+                                                                                data-toggle="tooltip"
+                                                                                data-placement="top"
+                                                                                data-original-title="Add to Compare"></a>
+                                        </li>
+                                        <li><a class="link-wishlist" href="+" data-toggle="tooltip"
+                                               data-placement="top" data-original-title="Add to Wishlist"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="toggle-content">
+                                    <div class="toggle toggle-white">
+                                        <h4 class="trigger"><a href="#">Product Tags</a></h4>
+                                        <div style="display: none;" class="toggle_container ">
+                                            <div class="box-collateral box-tags">
+                                                <div class="tags">
+                                                    <div id="addTagForm">
+                                                        <div class="form-add-tags">
+                                                             <label for="productTagName"><%= obj.tag %></label>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- related Product Slider -->
+                        <div class="product-collateral">
+                            <!-- related Product Slider -->
+                            <section class="related-pro">
+                                <div class="slider-items-products">
+                                    <div class="new_title center">
+                                        <h2>Related Products</h2>
+                                    </div>
+                                    <div id="related-products-slider" class="product-flexslider hidden-buttons">
+                                        <div class="slider-items slider-width-col4 products-grid owl-carousel owl-theme"
+                                             style="opacity: 1; display: block;">
+                                            <!-- Item -->
+                                            <div class="owl-wrapper-outer">
+                                                <div class="owl-wrapper"
+                                                     style="width: 3636px; left: 0px; display: block;">
+                                                    <%
+                                                    var num = 0
+                                                    for (var i = other.length - 1 ; i >= 0 ; i--) {
+                                                        num++
+                                                    %>
+                                                    <div class="owl-item" style="width: 303px;">
+                                                        <div class="item">
+                                                            <div class="col-item">
+                                                                <div class="item-inner">
+                                                                    <div class="item-img">
+                                                                        <div class="item-img-info">
+                                                                            <a href="/product/<%= other[i]._id %>" title="<%= other[i].name %>"
+                                                                               class="product-image">
+                                                                                <img src="https://res.cloudinary.com/iamraw/image/upload/<%= other[i].thumbnail %>.jpg"
+                                                                                     alt="<%= other[i].name %>">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="item-info">
+                                                                        <div class="info-inner">
+                                                                            <div class="item-title"><a href="/product/<%= other[i]._id %>"
+                                                                                                       title="<%= other[i].name %>"> <%= other[i].name %> </a>
+                                                                            </div>
+                                                                            <div class="item-content">
+                                                                                <div class="rating">
+                                                                                    <div class="ratings">
+                                                                                        <div class="rating-box">
+                                                                                            <div class="rating"
+                                                                                                 style="width:80%"></div>
+                                                                                        </div>
+                                                                                        <p class="rating-links"><a
+                                                                                                    href="#">1
+                                                                                                Review(s)</a> <span
+                                                                                                    class="separator">|</span>
+                                                                                            <a href="#">Add Review</a>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="item-price">
+                                                                                    <div class="price-box"><span
+                                                                                                class="regular-price"
+                                                                                                id="product-price-1"> <span
+                                                                                                    class="price">$<%= other[i].price %></span> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="actions"><span class="add-to-links">
+                                                                                <a href="" class="link-wishlist"
+                                                                                   title="Add to Wishlist"><span>Add to Wishlist</span></a>
+                                  <button type="button" title="Add to Cart" class="button btn-cart">
+                                      <span>Add to Cart</span></button>
+                                  <a href="" class="link-compare" title="Add to Compare"><span>Add to Compare</span></a></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <%
+                                                        if (num == 4) {
+                                                            break;
+                                                        } else {
+                                                            continue
+                                                        }
+                                                    }
+                                                    %>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- related Product Slider End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<%- include('partials/footer'); %>
+<!-- End Footer -->
+<!-- JavaScript -->
+<script type="text/javascript" src="/./js/prototype.js"></script>
+<script type="text/javascript" src="/./js/jquery.min.js"></script>
+<script type="text/javascript" src="/./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/./js/common.js"></script>
+<script type="text/javascript" src="/./js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="/./js/toggle.js"></script>
+<script type="text/javascript" src="/./js/pro-img-slider.js"></script>
+<script type="text/javascript" src="/./js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="/./js/cloud-zoom.js"></script>
+
+<script type="text/javascript">
+    //<![CDATA[
+    jQuery(function () {
+        jQuery(".slideshow").cycle({
+            fx: 'scrollHorz',
+            easing: 'easeInOutCubic',
+            timeout: 10000,
+            speedOut: 800,
+            speedIn: 800,
+            sync: 1,
+            pause: 1,
+            fit: 0,
+            pager: '#home-slides-pager',
+            prev: '#home-slides-prev',
+            next: '#home-slides-next'
+        });
+    });
+    //]]>
+</script>
+</body>
+</html>

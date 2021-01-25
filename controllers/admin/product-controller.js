@@ -1,14 +1,29 @@
-const Product = require('../../models/product');
+const Product = require('../../modules/product');
 
-exports.indexProduct = function (req, resp) {
-    Product.find(function (err, data) {
-        resp.render('index', {data: data});
-    });
-}
 
-exports.getList = function (req, resp) {
+// exports.quickView = function (req, resp) {
+//     Product.findById(req.params.id, function (err, obj) {
+//         if (err) {
+//             return res.status(500).send(err);
+//         } else {
+//             resp.render('client/product', { obj: obj});
+//         }
+//     });
+// }
+// exports.quickView = async function (req, resp) {
+//     const obj = await Product.findById(req.params.id);
+//     const lienQuan = await Product.find();
+//     resp.render('client/product', {obj: obj, other: lienQuan});
+// }
+
+exports.adminIndex = function (req, resp) {
     Product.find(function (err, data) {
         resp.render('admin/overview', {data: data});
+    });
+}
+exports.adminLogin = function (req, resp) {
+    Product.find(function (err, data) {
+        resp.render('admin/login-admin', {data: data});
     });
 }
 
@@ -25,19 +40,6 @@ exports.create = function (req, resp) {
 
 exports.save = function (req, resp) {
     var obj = new Product(req.body);
-    // const name = req.body.name;
-    // const price = req.body.price;
-    // const thumbnail = req.body.thumbnail;
-    // const tag = req.body.tag;
-    // const status = req.body.status;
-    // const product = new Product({
-    //     name: name,
-    //     price: price,
-    //     thumbnail: thumbnail,
-    //     tag: tag,
-    //     status: status
-    //
-    // });
     console.log(req.body);
     obj.save(function (err) {
         if (err) {
@@ -72,15 +74,6 @@ exports.update = function (req, resp) {
         });
 }
 
-exports.editDetail = function (req, resp) {
-    Product.findById(req.params.id, function (err, obj) {
-        if (err) {
-            return res.status(500).send(err);
-        } else {
-            resp.render('admin/edit-detail-product', {obj: obj});
-        }
-    });
-}
 
 exports.updateDetail = function (req, resp) {
     Product.findByIdAndUpdate(
