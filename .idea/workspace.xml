@@ -33,6 +33,7 @@
       <change afterPath="$PROJECT_DIR$/views/admin/partials/navbar.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/client/index.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/client/login-client.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/client/new-arrival.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/client/product.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/client/products/list-product.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/client/products/new-arrival.ejs" afterDir="false" />
@@ -132,7 +133,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Asp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../magik_accord2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/client" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
@@ -140,19 +141,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\Shop\views\client" />
+      <recent name="C:\Users\admin\Desktop\Shop\public\css" />
+      <recent name="C:\Users\admin\Desktop\Shop\public\js" />
+      <recent name="C:\Users\admin\Desktop\Shop\views\admin" />
+      <recent name="C:\Users\admin\Desktop\Shop\views\client\products" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\admin\Desktop\Shop\views\client" />
       <recent name="C:\Users\admin\Desktop\Shop\views\admin\product" />
       <recent name="C:\Users\admin\Desktop\Shop\views\products" />
       <recent name="C:\Users\admin\Desktop\Shop\routes\client" />
       <recent name="C:\Users\admin\Desktop\Shop\views\admin" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\Desktop\Shop\public\css" />
-      <recent name="C:\Users\admin\Desktop\Shop\public\js" />
-      <recent name="C:\Users\admin\Desktop\Shop\views\client" />
-      <recent name="C:\Users\admin\Desktop\Shop\views\admin" />
-      <recent name="C:\Users\admin\Desktop\Shop\views\client\products" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -200,7 +201,8 @@
       <workItem from="1611322945535" duration="14189000" />
       <workItem from="1611384129517" duration="2608000" />
       <workItem from="1611447602925" duration="10358000" />
-      <workItem from="1611581649124" duration="3304000" />
+      <workItem from="1611581649124" duration="3901000" />
+      <workItem from="1611636918150" duration="1507000" />
     </task>
     <servers />
   </component>

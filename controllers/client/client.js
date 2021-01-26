@@ -5,6 +5,11 @@ exports.rubyProduct = function (req, resp) {
         resp.render('client/ruby', {data: data});
     });
 }
+exports.newArrival = function (req, resp) {
+    Product.find(function (err, data) {
+        resp.render('client/new-arrival', {data: data});
+    });
+}
 
 exports.quickView = async function (req, resp) {
     const obj = await Product.findById(req.params.id);
