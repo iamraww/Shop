@@ -5,9 +5,19 @@ exports.rubyProduct = function (req, resp) {
         resp.render('client/ruby', {data: data});
     });
 }
+exports.aquamarineProduct = function (req, resp) {
+    Product.find(function (err, data) {
+        resp.render('client/aquamarine', {data: data});
+    });
+}
 exports.newArrival = function (req, resp) {
     Product.find(function (err, data) {
         resp.render('client/new-arrival', {data: data});
+    });
+}
+exports.saleProduct = function (req, resp) {
+    Product.find(function (err, data) {
+        resp.render('client/sale-product', {data: data});
     });
 }
 

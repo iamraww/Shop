@@ -14,7 +14,7 @@
 <body class="hold-transition login-page">
 
 
-<form action="/register" method="post" name="register-client">
+<form action="/register" method="post" name="register-form">
     <div style="text-align:center;font-size: 20px;margin-bottom: 10px;font-weight:bold;color:#3699FF;">
         REGISTER
     </div>
@@ -175,7 +175,10 @@
 
     </div>
     <div class="inputGroup">
-        <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
+        <button type="submit" class="btn btn-primary btn-block btn-flat" name="btn-submit">Register</button>
+    </div>
+    <div style="text-align: left;margin-bottom: -15px;font-size:14px;">
+        <a href="/" ><i class="glyphicon glyphicon-minus"></i> Back To Home </a>
     </div>
     <div style="text-align: right;margin-bottom: -15px;font-size:14px;">
         <a href="/login"><i class="glyphicon glyphicon-minus"></i> Login now </a>
@@ -184,7 +187,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 <script src="../js/form/TweenMax.js"></script>
 <script src="../js/form/register.js"></script>
 <script src="../js/form/MorphSVGPlugin.js"></script>

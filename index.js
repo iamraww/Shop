@@ -24,11 +24,9 @@ app.use(bodyParser.urlencoded({extended: false}));
 const productAdminRoute = require('./routes/product-admin-route');
 const clienRoute = require('./routes/clientRoutes');
 const indexPage = require('./routes/client/index');
-const Products = require('./routes/client/products');
 
 
 app.use(indexPage);
-app.use(Products);
 app.use(productAdminRoute);
 app.use(clienRoute);
 

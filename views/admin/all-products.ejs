@@ -70,7 +70,7 @@
                                     <option>None</option>
                                     <option>None</option>
                                 </select>
-                                <button type="submit" class="btn btn-danger">Lọc</button>
+                                <button type="submit" class="btn btn-danger">Filter</button>
                             </div>
                         </div>
 
@@ -91,7 +91,7 @@
                                     <th>Image</th>
                                     <th>Name</th>
                                     <th>Price</th>
-                                    <th>Status</th>
+                                    <th>Type</th>
                                     <th>Hastag</th>
                                     <th>Status</th>
                                     <th>Action</th>
@@ -105,7 +105,7 @@
                                         <td><img class="img-responsive"
                                                  src="https://res.cloudinary.com/iamraw/image/upload/<%= data[i].thumbnail %>.jpg"
                                                  alt=""/></td>
-                                        <td><b><%= data[i].name %></b></td>
+                                        <td><b><a href="/product/<%= data[i]._id %>"><%= data[i].name %></a></b></td>
                                         <td><b><%= data[i].price %></b></td>
                                         <td><b><%= data[i].stone %></b></td>
                                         <td><b><%= data[i].tag %></b></td>
@@ -113,7 +113,7 @@
                                         <td>
                                             <a href="/admin/edit-product/<%= data[i]._id %>" class="btn btn-info">Edit</a>
                                             <a href=""></a>
-                                            <a href="#" id="<%= data[i]._id %>" class="btn btn-danger" >Delete</a>
+                                            <a href="#" id="<%= data[i]._id %>" class=" btn-delete btn btn-danger" >Delete</a>
                                         </td>
                                     </tr>
                                 <%

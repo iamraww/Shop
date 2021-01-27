@@ -1,7 +1,12 @@
-$('form[name="register-client"]').validate({
+$('form[name="register-form"]').validate({
     rules: {
         username: {
             required: true,
+            minlength: 5
+        },
+        email: {
+            required: true,
+            email: true
         },
         password: {
             required: true,
@@ -11,30 +16,27 @@ $('form[name="register-client"]').validate({
             required: true,
             minlength: 5,
             equalTo: "#password"
-        },
-        email: {
-            required: true,
-            email: true
         }
 
     },
 
     messages: {
         username: {
-            required: "Vui lòng nhập Username",
+            required: "Please enter your Username",
+            minlength: "Your Username must be at least 5 characters long"
+        },
+        email: {
+            required: "Please enter your email",
+            email: "Email invalid"
         },
         password: {
-            required: "Please provide a password",
+            required: "Please enter your password",
             minlength: "Your password must be at least 5 characters long"
         },
         confirmPassword: {
-            required: "Please provide a password",
+            required: "Please enter confirm password",
             minlength: "Your password must be at least 5 characters long",
-            equalTo: "Comfirm Password Ivl"
-        },
-        email: {
-            required: "Vui lòng nhập email",
-            email: "Email không hợp lệ"
+            equalTo: "Passwords do not match"
         }
     }
 

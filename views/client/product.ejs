@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>CrShop</title>
+    <title><%= obj.name %> </title>
 
     <link rel="icon" href="http://demo.magikthemes.com/skin/frontend/base/default/favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="http://demo.magikthemes.com/skin/frontend/base/default/favicon.ico"
@@ -70,31 +70,21 @@
                                                             class="cloud-zoom-gallery"
                                                             rel="useZoom: 'zoom1', smallImage: 'https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail1 %>.jpg' "><img
                                                                 src="https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail1 %>.jpg"
-                                                                alt="Thumbnail 1" draggable="false"></a></li>
+                                                                draggable="false"></a></li>
                                                 <li style="width: 75px; float: left; display: block;"><a
                                                             href="https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail2 %>.jpg"
                                                             class="cloud-zoom-gallery"
                                                             rel="useZoom: 'zoom1', smallImage: 'https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail2 %>.jpg' "><img
                                                                 src="https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail2 %>.jpg"
-                                                                alt="Thumbnail 2" draggable="false"></a></li>
+                                                                 draggable="false"></a></li>
                                                 <li style="width: 75px; float: left; display: block;"><a
                                                             href="https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail3 %>.jpg"
                                                             class="cloud-zoom-gallery"
                                                             rel="useZoom: 'zoom1', smallImage: 'https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail3 %>.jpg' "><img
                                                                 src="https://res.cloudinary.com/iamraw/image/upload/<%= obj.thumbnail3 %>.jpg"
-                                                                alt="Thumbnail 1" draggable="false"></a></li>
+                                                                 draggable="false"></a></li>
                                             </ul>
                                         </div>
-                                        <ul class="flex-direction-nav">
-                                            <li>
-                                                <a class="flex-prev flex-disabled" href="#" tabindex="-1">
-
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="flex-next" href="#"></a>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                                 <!-- end: more-images -->
@@ -143,17 +133,12 @@
                                         <span>Add to Cart</span></button>
                                 </div>
                                 <div class="email-addto-box">
-                                    <p class="email-friend"><a href="#" data-toggle="tooltip" data-placement="top"
-                                                               data-original-title="Email to a Friend"><span></span></a>
+                                    <p class="email-friend"><a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Email to a Friend"><span></span></a>
                                     </p>
                                     <ul class="add-to-links">
-                                        <li><span class="separator">|</span> <a class="link-compare" href="+"
-                                                                                data-toggle="tooltip"
-                                                                                data-placement="top"
-                                                                                data-original-title="Add to Compare"></a>
+                                        <li><span class="separator">|</span> <a class="link-compare" href="+" data-toggle="tooltip" data-placement="top" data-original-title="Add to Compare"></a>
                                         </li>
-                                        <li><a class="link-wishlist" href="+" data-toggle="tooltip"
-                                               data-placement="top" data-original-title="Add to Wishlist"></a></li>
+                                        <li><a class="link-wishlist" href="+" data-toggle="tooltip" data-placement="top" data-original-title="Add to Wishlist"></a></li>
                                     </ul>
                                 </div>
                                 <div class="toggle-content">

@@ -18,8 +18,6 @@ route.get('/admin/edit-product/:id', productController.edit);
 
 route.post('/admin/edit-product/:id', productController.update);
 
-route.post('/admin/edit-detail/:id', productController.updateDetail);
-
 route.post('/admin/delete/:id', productController.delete);
 
 module.exports = route;
