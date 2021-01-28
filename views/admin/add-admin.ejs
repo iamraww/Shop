@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <base href=""/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="copyright" content=""/>
+    <title>Add Product</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon-logo.png"/>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../css/layout.css" rel="stylesheet"/>
+    <script src="../../js/jquery.min.js">x</script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<body class="bg-soft">
+<div class="container-fluid padding0">
+    <%- include('partials/header-admin'); %>
+    <div id="main">
+        <%- include('partials/navbar'); %>
+        <h1><span class="glyphicon glyphicon-globe addtop" aria-hidden="true"></span>&nbsp;&nbsp;Administrators</h1>
+        <div id="sub-main">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <ol class="breadcrumb">
+                        <li>Admin</li>
+                        <li class="active">Add Admin</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row space-top">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-8 option-h4 text-justify">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span aria-hidden="true">&nbsp;</span>Add Product
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-horizontal" action="/admin/add-admin" method="post" name="register-admin">
+                                <div class="form-group">
+                                    <label class="col-xs-12 col-sm-4 col-md-3 col-lg-2 control-label">Full Name</label>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                        <input type="text" class="form-control" name="fullName">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-xs-12 col-sm-4 col-md-3 col-lg-2 control-label">Username</label>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                        <input type="text" class="form-control" name="username">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-xs-12 col-sm-4 col-md-3 col-lg-2 control-label">Password</label>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                        <input type="password" class="form-control" name="password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-xs-12 col-sm-4 col-md-3 col-lg-2 control-label">Confirm Password</label>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                        <input type="password" class="form-control" name="confirmPwd">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-xs-12 col-sm-4 col-md-3 col-lg-2 control-label">Email</label>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                        <input type="email" class="form-control" name="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-xs-12 col-sm-4 col-md-3 col-lg-2 control-label">Permission </label>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                        <select class="form-control">
+                                            <option>System management</option>
+                                            <option>Editor</option>
+                                            <option>Accountant</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group space-top">
+                                    <label class="col-xs-12 col-sm-4 col-md-3 col-lg-2 control-label"></label>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <button class="btn btn-danger" type="submit">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+<script src="../../js/form/register-admin.js"></script>
+<script>
+    const cloudName = 'iamraw';
+    const unsignedUploadPreset = 'hyfsqna2';
+
+    var img = document.querySelector('[name="image"]');
+
+    img.onchange = function () {
+        var file = this.files[0];
+        var url = `https://api.cloudinary.com/v1_1/${cloudName}/upload`;
+
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var responseDataJson = JSON.parse(this.responseText);
+                console.log(responseDataJson);
+                var imageUrl = document.querySelector('input[name="thumbnail"]');
+                imageUrl.value = responseDataJson.public_id;
+                document.getElementById('image-preview').src = responseDataJson.url;
+            }
+        }
+        xhr.open('POST', url, true);
+        var fd = new FormData();
+        fd.append('upload_preset', unsignedUploadPreset);
+        fd.append('tags', 'browser_upload');
+        fd.append('file', file);
+        xhr.send(fd);
+    }
+</script>
+</body>
+</html>

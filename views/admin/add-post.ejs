@@ -27,7 +27,7 @@
     <%- include('partials/header-admin'); %>
     <div id="main">
         <%- include('partials/navbar'); %>
-        <h1><span class="glyphicon glyphicon-globe addtop" aria-hidden="true"></span>&nbsp;&nbsp;Products</h1>
+        <h1><span class="glyphicon glyphicon-globe addtop" aria-hidden="true"></span>&nbsp;&nbsp;Post</h1>
         <div id="sub-main">
             <div class="row">
                 <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9">
@@ -38,75 +38,20 @@
                 </div>
             </div>
             <div class="row space-top">
-                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 option-h4 text-justify">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4>Edit Info</h4>
-                        </div>
-                        <div class="panel-body">
-                            <form action="/admin/edit-product/<%= obj._id %>" method="post">
-                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                    <label>Name</label>
-                                    <input type="text" class="form-control" value="<%= obj.name %>" name="name">
-                                </div>
-                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                    <label>Thumbnail</label>
-                                    <input type="file" class="form-control" name="image">
-                                    <input type="hidden" name="thumbnail">
-                                    <img src="" alt="" id="image-preview" style="width: 100px">
-                                </div>
-                                <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                    <label>Price</label>
-                                    <input type="text" class="form-control " value="<%= obj.price %>" name="price">
-                                </div>
-                                <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                    <label>Stone</label>
-                                    <input type="text" class="form-control" value="<%= obj.stone %>" name="stone">
-                                </div>
-                                <div class="form-group col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                    <label>Hastag</label>
-                                    <input type="text" class="form-control" value="<%= obj.tag %>" name="tag">
-                                </div>
-                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <button class="btn btn-info" type="submit">Submit</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-<!--                EDIT DETAIL -->
-                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 option-h4 text-justify">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 option-h4 text-justify">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4>Edit Detail</h4>
                         </div>
                         <div class="panel-body">
-                            <form action="/admin/edit-product/<%= obj._id %>" method="post">
-                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                    <label>Image Product 1 </label>
-                                    <input type="file" class="form-control" placeholder="Image Product" name="image1">
-                                    <input type="hidden" name="thumbnail1">
-                                    <img src="" alt="" id="image-preview1" style="width: 100px">
-                                </div>
-                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                    <label>Image Product 2 </label>
-                                    <input type="file" class="form-control" placeholder="Image Product" name="image2">
-                                    <input type="hidden" name="thumbnail2">
-                                    <img src="" alt="" id="image-preview2" style="width: 100px">
-                                </div>
-                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                    <label>Image Product 3</label>
-                                    <input type="file" class="form-control" placeholder="Image Product" name="image3">
-                                    <input type="hidden" name="thumbnail3">
-                                    <img src="" alt="" id="image-preview3" style="width: 100px">
-                                </div>
+                            <form action="/admin/add-post" method="post">
                                 <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <label>Status</label>
-                                    <input type="text" class="form-control" value="Updated" name="status">
+                                    <label>Title</label>
+                                    <input type="text" class="form-control" name="title">
                                 </div>
                                 <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                     <label>Detail</label>
-                                    <textarea type="text" class="form-control" name="detail" rows="3">Suspendisse eleifend ornare turpis. Sed ante justo, laoreet vel laoreet a, tristique id lacus. Donec iaculis neque vitae augue venenatis venenatis. Curabitur elementum orci justo, nec sollicitudin eros Suspendisse eleifend ornare turpis. Sed ante justo, laoreet vel laoreet a, tristique id lacus. Donec iaculis neque vitae augue venenatis venenatis. Curabitur elementum orci justo, nec sollicitudin eros Suspendisse eleifend ornare turpis. Sed ante justo, laoreet vel laoreet a, tristique id lacus. Donec iaculis neque vitae augue venenatis venenatis. Curabitur elementum orci justo, nec sollicitudin eros</textarea>
+                                    <textarea type="text" class="form-control" name="detail" rows="5">Suspendisse eleifend ornare turpis. Sed ante justo, laoreet vel laoreet a, tristique id lacus. Donec iaculis neque vitae augue venenatis venenatis. Curabitur elementum orci justo, nec sollicitudin eros Suspendisse eleifend ornare turpis. Sed ante justo, laoreet vel laoreet a, tristique id lacus. Donec iaculis neque vitae augue venenatis venenatis. Curabitur elementum orci justo, nec sollicitudin eros Suspendisse eleifend ornare turpis. Sed ante justo, laoreet vel laoreet a, tristique id lacus. Donec iaculis neque vitae augue venenatis venenatis. Curabitur elementum orci justo, nec sollicitudin eros</textarea>
                                 </div>
                                 <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                     <button class="btn btn-info" type="submit">Submit</button>

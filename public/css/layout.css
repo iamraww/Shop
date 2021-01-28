@@ -823,7 +823,6 @@ form{padding:30px 20px;}
 form input {font-family:"Open Sans", sans-serif;}
 
 form input[type="text"], form input[type="password"]{
-    border:none;
     color:#282828;
     font-size:13px;
     margin-bottom:15px;

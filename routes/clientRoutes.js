@@ -6,8 +6,10 @@ route.get('/ruby', clientIndex.rubyProduct);
 route.get('/aquamarine', clientIndex.aquamarineProduct);
 route.get('/new-arrival', clientIndex.newArrival);
 route.get('/login', clientIndex.loginClient);
-route.get('/register', clientIndex.registerClient);
-route.get('/sale-products', clientIndex.saleProduct);
 
+route.get('/register', clientIndex.registerClient);
+route.post('/register', clientIndex.registerClientSave);
+
+route.get('/sale-products', clientIndex.saleProduct);
 route.get('/product/:id', clientIndex.quickView);
 module.exports = route;
