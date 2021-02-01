@@ -493,7 +493,6 @@ table tbody tr td:nth-child(2), table tbody tr td:nth-child(4), table tbody tr t
 
 table tbody tr td:nth-child(3) {
     min-width: 250px;
-    text-align: left;
     max-width: 320px;
 }
 

@@ -2,10 +2,12 @@ const express = require('express');
 const route = express.Router();
 const clientIndex = require('../controllers/client/client');
 
-route.get('/ruby', clientIndex.rubyProduct);
+route.get('/ring', clientIndex.ringProduct);
 route.get('/aquamarine', clientIndex.aquamarineProduct);
 route.get('/new-arrival', clientIndex.newArrival);
+
 route.get('/login', clientIndex.loginClient);
+route.post('/login', clientIndex.loginClientPost);
 
 route.get('/register', clientIndex.registerClient);
 route.post('/register', clientIndex.registerClientSave);

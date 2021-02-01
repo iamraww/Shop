@@ -2,7 +2,7 @@ $('form[name="register-admin"]').validate({
     rules: {
         fullName: {
             required: true,
-            minlength: 10
+            minlength: 5
         },
         username: {
             required: true,
@@ -27,7 +27,7 @@ $('form[name="register-admin"]').validate({
     messages: {
         fullName: {
             required: "Enter Name",
-            minlength: "Full Name must be at least 10 characters long"
+            minlength: "Full Name must be at least 5 characters long"
         },
         username: {
             required: "Enter Username",

@@ -10,7 +10,7 @@
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <meta name="copyright" content=""/>
-    <title>All Product</title>
+    <title>All Categories</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="images/icon-logo.png"/>
     <link href="../../css/bootstrap.min.css" rel="stylesheet"/>
@@ -29,20 +29,20 @@
     <%- include('partials/header-admin'); %>
     <div id="main">
         <%- include('partials/navbar'); %>
-        <h1><span class="glyphicon glyphicon-globe addtop" aria-hidden="true"></span>&nbsp;&nbsp;Products</h1>
+        <h1><span class="glyphicon glyphicon-globe addtop" aria-hidden="true"></span>&nbsp;&nbsp;Categories</h1>
         <div id="sub-main">
             <div class="row">
                 <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9">
                     <ol class="breadcrumb">
-                        <li>Products</li>
-                        <li class="active">All Product</li>
+                        <li>Categories</li>
+                        <li class="active">All Categories</li>
                     </ol>
                 </div>
             </div>
             <div class="row space-top">
                 <div class="col-xs-12 col-sm-5 col-md-7 col-lg-7">
                     <div class="btn btn-danger btn-lg">
-                        <a href="/admin/add-product">Add Product</a>
+                        <a href="/admin/add-category">Add Categories</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-7 col-md-5 col-lg-5">
@@ -59,16 +59,8 @@
                     <div class="row margin0 space">
                         <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 padding0">
                             <div class="form-inline">
-                                <select class="form-control">
-                                    <option>All</option>
-                                    <option>None</option>
-                                    <option>None</option>
-                                    <option>None</option>
-                                </select>
-                                <button type="submit" class="btn btn-danger">Filter</button>
                             </div>
                         </div>
-
                         <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9 text-right padding0">
                             <div class="btn btn-danger btn-a">
                                 <a href="#">Delete All</a>
@@ -83,30 +75,21 @@
                                 <thead>
                                 <tr>
                                     <th><input type="checkbox" value=""/></th>
-                                    <th>Image</th>
-                                    <th>Name</th>
-                                    <th>Price</th>
-                                    <th>Type</th>
                                     <th>Category</th>
+                                    <th>Descriptions</th>
                                     <th>Status</th>
-                                    <th>Action</th>
                                 </tr>
                                 </thead>
                                 <%
-                                for (var i = data.length - 1 ; i >= 0 ; i--) {
+                                for (var i = 0 ; i< data.length; i++) {
                                 %>
                                     <tr>
                                         <td><input type="checkbox" value=""/></td>
-                                        <td><img class="img-responsive"
-                                                 src="https://res.cloudinary.com/iamraw/image/upload/<%= data[i].thumbnail %>.jpg"
-                                                 alt=""/></td>
-                                        <td><b><a href="/product/<%= data[i]._id %>"><%= data[i].name %></a></b></td>
-                                        <td><b><%= data[i].price %></b></td>
-                                        <td><b><%= data[i].stone %></b></td>
-                                        <td><b><%= data[i].tag %></b></td>
+                                        <td><b><%= data[i].category %></b></td>
+                                        <td><b><%= data[i].descriptions %></b></td>
                                         <td><b><%= data[i].status %></b></td>
                                         <td>
-                                            <a href="/admin/edit-product/<%= data[i]._id %>" class="btn btn-info">Edit</a>
+                                            <a href="/admin/edit-category/<%= data[i]._id %>" class="btn btn-info" disabled="">Edit</a>
                                             <a href=""></a>
                                             <a href="#" id="<%= data[i]._id %>" class=" btn-delete btn btn-danger" >Delete</a>
                                         </td>
@@ -116,46 +99,43 @@
                                 %>
                                 <tr>
                                     <th></th>
-                                    <th>Image</th>
-                                    <th>Name</th>
-                                    <th>Price</th>
-                                    <th>Status</th>
                                     <th>Category</th>
+                                    <th>Descriptions</th>
                                     <th>Status</th>
-                                    <th>Action</th>
                                 </tr>
                             </table>
                         </div>
                         <nav>
+                            <div></div>
                             <ul class="pagination">
                                 <%if(page > 1){%>
-                                <li><a href="/admin/all-products?page=1&limit=<%=limit%>">&laquo;</a></li>
+                                <li><a href="/admin/all-categories?page=1&limit=<%=limit%>">&laquo;</a></li>
                                 <%
                                 }
                                 %>
                                 <%if(page > 1){%>
-                                <li><a href="/admin/all-products?page=<%=parseInt(page)-1%>&limit=<%=limit%>">&lsaquo;</a></li>
+                                <li><a href="/admin/all-categories?page=<%=parseInt(page)-1%>&limit=<%=limit%>">&lsaquo;</a></li>
                                 <%
                                 }
                                 %>
                                 <%if(page > 2){%>
-                                <li><a href="/admin/all-products?page=<%=parseInt(page)-1%>&limit=<%=limit%>"><%=(parseInt(page)-1)%></a></li>
+                                <li><a href="/admin/all-categories?page=<%=parseInt(page)-1%>&limit=<%=limit%>"><%=(parseInt(page)-1)%></a></li>
                                 <%
                                 }
                                 %>
                                 <li class="active"><a href="#"><%=page%></a></li>
                                 <% if((parseInt(page) + 1) < totalPage){%>
-                                <li><a href="/admin/all-products?page=<%=parseInt(page)+1%>&limit=<%=limit%>"><%=(parseInt(page)+1)%></a></li>
+                                <li><a href="/admin/all-categories?page=<%=parseInt(page)+1%>&limit=<%=limit%>"><%=(parseInt(page)+1)%></a></li>
                                 <%
                                 }
                                 %>
                                 <%if(page < totalPage){%>
-                                <li><a href="/admin/all-products?page=<%=parseInt(page)+1%>&limit=<%=limit%>">&rsaquo;</a></li>
+                                <li><a href="/admin/all-categories?page=<%=parseInt(page)+1%>&limit=<%=limit%>">&rsaquo;</a></li>
                                 <%
                                 }
                                 %>
                                 <%if(page < totalPage){%>
-                                <li><a href="/admin/all-products?page=<%=totalPage%>&limit=<%=limit%>">&raquo;</a></li>
+                                <li><a href="/admin/all-categories?page=<%=totalPage%>&limit=<%=limit%>">&raquo;</a></li>
                                 <%
                                 }
                                 %>
@@ -179,7 +159,7 @@
                         window.location.reload();
                     }
                 }
-                xhr.open('POST', '/admin/delete/' + this.id);
+                xhr.open('POST', '/admin/delete-category/' + this.id);
                 xhr.send();
             }
         }

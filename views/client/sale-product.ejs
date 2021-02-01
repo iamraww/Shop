@@ -61,43 +61,41 @@
                                                              title="Grid">Grid</span>
                                     <a class="button button-list" title="List" href="">List</a></div>
                             </div>
-                            <div id="sort-by">
-                                <label class="left">Sort By: </label>
-                                <ul>
-                                    <li><a href="#">Position<span class="right-arrow"></span></a>
-                                        <ul>
-                                            <li><a href="#">Name</a></li>
-                                            <li><a href="#">Price</a></li>
-                                            <li><a href="#">Position</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <a title="Set Descending Direction" href="#" class="button-asc left"><span
-                                            class="glyphicon glyphicon-arrow-up"
-                                            style="color:#999;font-size:11px;"></span></a></div>
                             <div class="pager">
                                 <div class="pages">
                                     <label>Page:</label>
                                     <ul class="pagination">
-                                        <li><a href="#">«</a></li>
-                                        <li class="active"><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li><a href="#">»</a></li>
-                                    </ul>
-                                </div>
-                                <div id="limiter">
-                                    <label>View: </label>
-                                    <ul>
-                                        <li><a href="#">15<span class="right-arrow"></span></a>
-                                            <ul>
-                                                <li><a href="#">20</a></li>
-                                                <li><a href="#">30</a></li>
-                                                <li><a href="#">35</a></li>
-                                            </ul>
-                                        </li>
+                                        <%if(page > 1){%>
+                                        <li><a href="/sale-products?page=1&limit=<%=limit%>">&laquo;</a></li>
+                                        <%
+                                        }
+                                        %>
+                                        <%if(page > 1){%>
+                                        <li><a href="/sale-products?page=<%=parseInt(page)-1%>&limit=<%=limit%>">&lsaquo;</a></li>
+                                        <%
+                                        }
+                                        %>
+                                        <%if(page > 2){%>
+                                        <li><a href="/sale-products?page=<%=parseInt(page)-1%>&limit=<%=limit%>"><%=(parseInt(page)-1)%></a></li>
+                                        <%
+                                        }
+                                        %>
+                                        <li class="active"><a href="#"><%=page%></a></li>
+                                        <% if((parseInt(page) + 1) < totalPage){%>
+                                        <li><a href="/sale-products?page=<%=parseInt(page)+1%>&limit=<%=limit%>"><%=(parseInt(page)+1)%></a></li>
+                                        <%
+                                        }
+                                        %>
+                                        <%if(page < totalPage){%>
+                                        <li><a href="/sale-products?page=<%=parseInt(page)+1%>&limit=<%=limit%>">&rsaquo;</a></li>
+                                        <%
+                                        }
+                                        %>
+                                        <%if(page < totalPage){%>
+                                        <li><a href="/sale-products?page=<%=totalPage%>&limit=<%=limit%>">&raquo;</a></li>
+                                        <%
+                                        }
+                                        %>
                                     </ul>
                                 </div>
                             </div>
@@ -106,7 +104,7 @@
                             <div class="col-lg-12">
                                 <%
                                 var num = 0
-                                for (var i = data.length - 7 ; i >= 0 ; i--) {
+                                for (var i = data.length - 1 ; i >= 0 ; i--) {
                                 num++
                                 %>
                                 <li style="margin-left: 0" class="item col-lg-3 col-md-4 col-sm-6 col-xs-12">
@@ -148,7 +146,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="actions"><span class="add-to-links"> <a
-                                                                    href="wishlist.ejs" class="link-wishlist"
+                                                                    href="" class="link-wishlist"
                                                                     title="Add to Wishlist"><span>Add to Wishlist</span></a>
                             <button title="Add to Cart" class="button btn-cart"><span>Add to Cart</span></button>
                             <a href="" class="link-compare"
@@ -159,10 +157,9 @@
                                     </div>
                                 </li>
                                 <%
-                                    if(num  == 16) {
+                                    if(num  == 32) {
                                         break;
-                                    } else { continue}
-                                }
+                                    } }
                                 %>
                             </div>
                         </ul>
