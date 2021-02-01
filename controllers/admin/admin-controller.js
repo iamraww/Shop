@@ -73,11 +73,10 @@ exports.deleteCategories = function (req, resp) {
 exports.allProduct = async function (req, resp) {
     const page = req.query.page || 1;
     const limit = req.query.limit || 8;
-    const categories = await categories.find();
     const listProduct = await Product.find().paginate(parseInt(page), parseInt(limit));
     const totalProduct = await Product.count();
     const totalPage = Math.ceil(totalProduct / limit);
-    resp.render('admin/all-products', {data: listProduct,categories: categories, page: page, limit: limit, totalPage: totalPage , allProducts: allProducts});
+    resp.render('admin/all-products', {data: listProduct, page: page, limit: limit, totalPage: totalPage });
 }
 exports.save = function (req, resp) {
     var obj = new Product(req.body);
@@ -105,7 +104,7 @@ exports.edit = function (req, resp) {
     });
 }
 
-exports.update = function (req, resp) {
+exports.update =  function (req, resp) {
     Product.findByIdAndUpdate(
         req.params.id,
         req.body,
