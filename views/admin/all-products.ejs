@@ -87,7 +87,6 @@
                                     <th>Name</th>
                                     <th>Price</th>
                                     <th>Type</th>
-                                    <th>Category</th>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>
@@ -100,10 +99,9 @@
                                         <td><img class="img-responsive"
                                                  src="https://res.cloudinary.com/iamraw/image/upload/<%= data[i].thumbnail %>.jpg"
                                                  alt=""/></td>
-                                        <td><b><a href="/product/<%= data[i]._id %>"><%= data[i].name %></a></b></td>
+                                        <td><b><a href="/product/<%= data[i]._id %>" target="_blank"><%= data[i].name %></a></b></td>
                                         <td><b><%= data[i].price %></b></td>
                                         <td><b><%= data[i].stone %></b></td>
-                                        <td><b><%= data[i].tag %></b></td>
                                         <td><b><%= data[i].status %></b></td>
                                         <td>
                                             <a href="/admin/edit-product/<%= data[i]._id %>" class="btn btn-info">Edit</a>
@@ -120,7 +118,6 @@
                                     <th>Name</th>
                                     <th>Price</th>
                                     <th>Status</th>
-                                    <th>Category</th>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>

@@ -1,48 +1,63 @@
 const Product = require('../../modules/product');
+const Category = require('../../modules/category');
 const AccountCllient = require('../../modules/accounts-client');
 require('mongoose-pagination');
 const md = require('md5');
 
-exports.ringProduct = async function (req, resp) {
+exports.categoryProduct = async function (req, resp) {
+    const listCategory = await Category.find();
     const page = req.query.page || 1;
     const limit = req.query.limit || 8;
-    const allProducts = await Product.find();
-    const listProduct = await Product.find().paginate(parseInt(page), parseInt(limit));
-    const totalProduct = await Product.count();
+    const listProduct = await Product.find({categoryId: req.params.categoryId}).paginate(parseInt(page), parseInt(limit));
+    const totalProduct = await Product.count({categoryId: req.params.categoryId});
     const totalPage = Math.ceil(totalProduct / limit);
-    resp.render('client/ring', {data: allProducts, listProduct: listProduct, page: page, limit: limit, totalPage: totalPage});
+    resp.render('client/ring', {data: listProduct, listCategory: listCategory, page: page, limit: limit, totalPage: totalPage});
 }
-exports.aquamarineProduct = async function (req, resp) {
+// exports.ringProduct = async function (req, resp) {
+//     const page = req.query.page || 1;
+//     const limit = req.query.limit || 8;
+//     const listProduct = await Product.find({tag: 'Ring'}).paginate(parseInt(page), parseInt(limit));
+//     const totalProduct = await Product.count({tag: 'Ring'});
+//     const totalPage = Math.ceil(totalProduct / limit);
+//     resp.render('client/ring', {data: listProduct, page: page, limit: limit, totalPage: totalPage});
+// }
+exports.aquamarineProduct =  async function (req, resp) {
+    const listCategory = await Category.find();
     const page = req.query.page || 1;
     const limit = req.query.limit || 8;
-    const listProduct = await Product.find().paginate(parseInt(page), parseInt(limit));
-    const totalProduct = await Product.count();
+    const listProduct = await Product.find({categoryId: req.params.categoryId}).paginate(parseInt(page), parseInt(limit));
+    const totalProduct = await Product.count({categoryId: req.params.categoryId});
     const totalPage = Math.ceil(totalProduct / limit);
-    resp.render('client/aquamarine', {data: listProduct, page: page, limit: limit, totalPage: totalPage});
+    resp.render('client/aquamarine', {data: listProduct, listCategory: listCategory, page: page, limit: limit, totalPage: totalPage});
 }
-exports.newArrival = async function (req, resp) {
+exports.newArrival =  async function (req, resp) {
     const page = req.query.page || 1;
+    const listCategory = await Category.find();
     const limit = req.query.limit || 8;
     const listProduct = await Product.find().paginate(parseInt(page), parseInt(limit));
     const totalProduct = await Product.count();
     const table = await Product.find();
     const totalPage = Math.ceil(totalProduct / limit);
-    resp.render('client/new-arrival', {data: listProduct, page: page, limit: limit, totalPage: totalPage, obj: table});
+    resp.render('client/new-arrival', {data: listProduct, listCategory: listCategory, page: page, limit: limit, totalPage: totalPage, obj: table});
 
 }
-exports.saleProduct = async function (req, resp) {
+exports.saleProduct =  async function (req, resp) {
     const page = req.query.page || 1;
+    const listCategory = await Category.find();
     const limit = req.query.limit || 8;
     const listProduct = await Product.find().paginate(parseInt(page), parseInt(limit));
     const totalProduct = await Product.count();
+    const table = await Product.find();
     const totalPage = Math.ceil(totalProduct / limit);
-    resp.render('client/sale-product', {data: listProduct, page: page, limit: limit, totalPage: totalPage});
+    resp.render('client/sale-product', {data: listProduct, listCategory: listCategory, page: page, limit: limit, totalPage: totalPage, obj: table});
+
 }
 
 exports.quickView = async function (req, resp) {
+    const listCategory = await Category.find();
     const obj = await Product.findById(req.params.id);
     const lienQuan = await Product.find();
-    resp.render('client/product', {obj: obj, other: lienQuan});
+    resp.render('client/product', {obj: obj, other: lienQuan, listCategory: listCategory});
 }
 
 //account client

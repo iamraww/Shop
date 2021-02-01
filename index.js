@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const Product = require('./modules/product');
+const Category = require('./modules/category');
 const port = 8888;
 
 app.use(express.static('public'))
@@ -31,10 +32,10 @@ app.use(productAdminRoute);
 app.use(clienRoute);
 
 
-app.get('/', function (request, response) {
-    Product.find(function (err, data) {
-        response.render('client/index.ejs', {data: data});
-    });
+app.get('/', async function (request, response) {
+    const listProduct = await Product.find();
+    const listCategory = await Category.find();
+    response.render('client/index.ejs', {data: listProduct, listCategory: listCategory});
 })
 
 app.get('/test', function (request, response) {

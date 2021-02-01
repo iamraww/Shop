@@ -36,6 +36,9 @@ var Schema = new mongoose.Schema({
     tag: {
         type: String
     },
+    categoryId: {
+        type: mongoose.Types.ObjectId
+    },
     detail: {
         type: String
     }

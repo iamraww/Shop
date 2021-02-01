@@ -15,20 +15,20 @@
                     <div style="display: none; left: 0px;" class="level0-wrapper">
                         <div class="level0-wrapper2">
                             <div class="nav-block nav-block-center">
+                                <%if(listCategory && listCategory.length > 0){%>
                                 <ul class="level0">
-                                    <li>
-                                        <a> <span></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/ring"> <span>Ring</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/neck"> <span>Neck</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="/bracalet"> <span>Braclet</span></a>
-                                    </li>
+                                    <li></li>
+                                    <% for (var i = 0; i < listCategory.length; i++) {
+                                    %>
+                                        <li>
+                                            <a href="/category/<%=listCategory[i]._id%>"> <span> <%=listCategory[i].category %> </span></a>
+                                        </li>
+                                    <%
+                                    }%>
                                 </ul>
+                                <%
+                                }
+                                %>
                             </div>
                         </div>
                     </div>

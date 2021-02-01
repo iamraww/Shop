@@ -2,8 +2,7 @@ const express = require('express');
 const route = express.Router();
 const clientIndex = require('../controllers/client/client');
 
-route.get('/ring', clientIndex.ringProduct);
-route.get('/aquamarine', clientIndex.aquamarineProduct);
+route.get('/category/:categoryId', clientIndex.categoryProduct);
 route.get('/new-arrival', clientIndex.newArrival);
 
 route.get('/login', clientIndex.loginClient);
