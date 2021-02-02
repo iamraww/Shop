@@ -4,7 +4,8 @@ const clientIndex = require('../controllers/client/client');
 
 route.get('/category/:categoryId', clientIndex.categoryProduct);
 route.get('/new-arrival', clientIndex.newArrival);
-
+route.get('/about-us', clientIndex.aboutUs);
+route.get('/contact-us', clientIndex.contactUs);
 route.get('/login', clientIndex.loginClient);
 route.post('/login', clientIndex.loginClientPost);
 

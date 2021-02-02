@@ -41,6 +41,28 @@ exports.newArrival =  async function (req, resp) {
     resp.render('client/new-arrival', {data: listProduct, listCategory: listCategory, page: page, limit: limit, totalPage: totalPage, obj: table});
 
 }
+exports.aboutUs =  async function (req, resp) {
+    const page = req.query.page || 1;
+    const listCategory = await Category.find();
+    const limit = req.query.limit || 8;
+    const listProduct = await Product.find().paginate(parseInt(page), parseInt(limit));
+    const totalProduct = await Product.count();
+    const table = await Product.find();
+    const totalPage = Math.ceil(totalProduct / limit);
+    resp.render('client/about-us', {data: listProduct, listCategory: listCategory, page: page, limit: limit, totalPage: totalPage, obj: table});
+
+}
+exports.contactUs =  async function (req, resp) {
+    const page = req.query.page || 1;
+    const listCategory = await Category.find();
+    const limit = req.query.limit || 8;
+    const listProduct = await Product.find().paginate(parseInt(page), parseInt(limit));
+    const totalProduct = await Product.count();
+    const table = await Product.find();
+    const totalPage = Math.ceil(totalProduct / limit);
+    resp.render('client/contact-us', {data: listProduct, listCategory: listCategory, page: page, limit: limit, totalPage: totalPage, obj: table});
+
+}
 exports.saleProduct =  async function (req, resp) {
     const page = req.query.page || 1;
     const listCategory = await Category.find();
