@@ -66,33 +66,33 @@
                                 <div class="pages">
                                     <ul class="pagination">
                                         <%if(page > 1){%>
-                                        <li><a href="/category/<%=listCategory._id%>?page=1&limit=<%=limit%>">&laquo;</a></li>
+                                        <li><a href="/category/60147de49c3e623a84437672?page=1&limit=<%=limit%>">&laquo;</a></li>
                                         <%
                                         }
                                         %>
                                         <%if(page > 1){%>
-                                        <li><a href="/category/<%=listCategory._id%>?page=<%=parseInt(page)-1%>&limit=<%=limit%>">&lsaquo;</a></li>
+                                        <li><a href="/category/60147de49c3e623a84437672?page=<%=parseInt(page)-1%>&limit=<%=limit%>">&lsaquo;</a></li>
                                         <%
                                         }
                                         %>
                                         <%if(page > 2){%>
-                                        <li><a href="/category/<%=listCategory._id%>?page=<%=parseInt(page)-1%>&limit=<%=limit%>"><%=(parseInt(page)-1)%></a></li>
+                                        <li><a href="/category/60147de49c3e623a84437672?page=<%=parseInt(page)-1%>&limit=<%=limit%>"><%=(parseInt(page)-1)%></a></li>
                                         <%
                                         }
                                         %>
                                         <li class="active"><a href="#"><%=page%></a></li>
                                         <% if((parseInt(page) + 1) < totalPage){%>
-                                        <li><a href="/category/<%=listCategory._id%>?page=<%=parseInt(page)+1%>&limit=<%=limit%>"><%=(parseInt(page)+1)%></a></li>
+                                        <li><a href="/category/60147de49c3e623a84437672?page=<%=parseInt(page)+1%>&limit=<%=limit%>"><%=(parseInt(page)+1)%></a></li>
                                         <%
                                         }
                                         %>
                                         <%if(page < totalPage){%>
-                                        <li><a href="/category/<%=listCategory._id%>?page=<%=parseInt(page)+1%>&limit=<%=limit%>">&rsaquo;</a></li>
+                                        <li><a href="/category/60147de49c3e623a84437672?page=<%=parseInt(page)+1%>&limit=<%=limit%>">&rsaquo;</a></li>
                                         <%
                                         }
                                         %>
                                         <%if(page < totalPage){%>
-                                        <li><a href="/category/<%=listCategory._id%>?page=<%=totalPage%>&limit=<%=limit%>">&raquo;</a></li>
+                                        <li><a href="/category/60147de49c3e623a84437672?page=<%=totalPage%>&limit=<%=limit%>">&raquo;</a></li>
                                         <%
                                         }
                                         %>
@@ -196,6 +196,11 @@
         });
     });
     //]]>
+</script>
+<script>
+    function getURL() {
+        window.location.href;
+    }
 </script>
 </body>
 </html>

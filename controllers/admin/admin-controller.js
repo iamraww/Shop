@@ -94,6 +94,7 @@ exports.create = function (req, resp) {
         resp.render('admin/add-product', {data: data});
     })
 }
+
 exports.edit = function (req, resp) {
     Product.findById(req.params.id, function (err, obj) {
         if (err) {
